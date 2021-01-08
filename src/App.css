@@ -1,0 +1,13 @@
+*{
+  font-family: 'Playfair Display', serif;
+}
+.navbar-nav li{
+  font-weight: 700;
+  font-size: 16px;
+  margin-left: 53px;
+  color: black;
+}
+
+.menu-left{
+  margin-right: 35px;
+}
