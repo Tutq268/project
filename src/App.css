@@ -11,3 +11,36 @@
 .menu-left{
   margin-right: 35px;
 }
+.body{
+  background-color: green;
+}
+
+
+/* Extra Small Devices, Phones */ 
+@media only screen and (min-width : 480px) {
+  .paddingScreen{
+    padding:120px 0px 0px 0px !important 
+} 
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+  .paddingScreen{
+    padding: 120px 20px 0px 20px !important 
+} 
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+  .paddingScreen{
+    padding: 120px 100px 0px 100px !important 
+
+  }
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+  .paddingScreen{
+    padding: 172px 120px 0px 100px !important 
+  }
+}

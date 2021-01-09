@@ -5,6 +5,7 @@ function useSticky () {
   const element = useRef(null)
 
   const handleScroll = () => {
+    if(!element.current) return
     window.scrollY > element.current.getBoundingClientRect().bottom
     ? setSticky(true)
     : setSticky(false);
@@ -30,6 +31,7 @@ function useSticky () {
 
 useEffect(() => {
   window.addEventListener("scroll", debounce(handleScroll))
+  if(handleScroll)  window.removeEventListener("scroll", () => handleScroll);
   return () => {
           window.removeEventListener("scroll", () => handleScroll);
         }  

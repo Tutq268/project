@@ -8,7 +8,6 @@ import SwiperCore, {
 } from 'swiper';
 
 import { Swiper, SwiperSlide } from 'swiper/react';
-// import useSticky from './../ hooks/useSticky.js'
 import useSticky from './../../component/hooks/useSticky.js';
 import { backGroundMain, aphorodite } from './data';
 import Navbar from './../../component/Navbar/Navbar';
@@ -19,6 +18,7 @@ import 'swiper/components/scrollbar/scrollbar.scss';
 import { Col, Row, Rate } from 'antd';
 // import Footer from "./../../component/Footer/Footer"
 import Footer from './../../component/Footer/Footer'
+import { NavLink } from 'react-router-dom';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -85,13 +85,15 @@ const Home = () => {
               {aphorodite.map((value, index) => {
                 return (
                   <Col xl={6} lg={12} md={12} sm={12} xs={24}>
-                    <div
+                    <NavLink
+                    to="/product-detail"
                       style={{
                         width: '100%',
                         display: 'flex',
                         flexDirection: 'column',
                         justifyContent: 'center',
                         alignItems: 'center',
+                        color: '#000'
                       }}
                     >
                       <div
@@ -125,7 +127,7 @@ const Home = () => {
                           </span>
                           <img
                             alt="Vector"
-                            src="./image/Home/heart-1.png"
+                            src="./image/Home/blackHeart.png"
                             style={{ width: '23px', height: '21px' }}
                           />
                         </div>
@@ -145,7 +147,7 @@ const Home = () => {
                         style={{ color: '#FF9592', fontSize: '15px' }}
                       />
                       <p style={{ fontWeight: 'bold' }}>{value.price}</p>
-                    </div>
+                    </NavLink>
                   </Col>
                 );
               })}
@@ -162,7 +164,7 @@ const Home = () => {
                 marginTop: '50px',
                 width: '236px',
                 height:'50px',
-                backgroundColor: '#565556',
+                backgroundColor: '#FF9592',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
@@ -172,7 +174,7 @@ const Home = () => {
                 style={{
                   fontWeight: '700',
                   fontSize: '14px',
-                  color: '#fff',
+                  color: '#000',
                 }}
               >
                    VIEW DETAILS
@@ -313,7 +315,7 @@ const Home = () => {
                   marginTop: '50px',
                   width: '236px',
                   height: '50px',
-                  backgroundColor: '#565556',
+                  backgroundColor: '#FF9592',
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
@@ -323,7 +325,7 @@ const Home = () => {
                   style={{
                     fontWeight: '700',
                     fontSize: '14px',
-                    color: '#fff',
+                    color: '#000',
                   }}
                 >
                   VIEW DETAILS
@@ -371,7 +373,7 @@ const Home = () => {
                 marginTop: '50px',
                 width: '236px',
                 height: '50px',
-                backgroundColor: '#565556',
+                backgroundColor: '#FF9592',
                 display: 'flex',
                 justifyContent: 'center',
                 alignItems: 'center',
@@ -381,7 +383,7 @@ const Home = () => {
                 style={{
                   fontWeight: '700',
                   fontSize: '14px',
-                  color: '#fff',
+                  color: '#000',
                 }}
               >
                 SIGN IN

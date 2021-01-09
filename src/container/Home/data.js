@@ -39,6 +39,5 @@ export const aphorodite=[
         image: './image/Home/Treatment.png',
         title: 'Pearly Goddess Gentle Make-up Remover',
         price: '$ 34'
-
-    },
+    }
 ]
