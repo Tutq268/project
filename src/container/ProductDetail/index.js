@@ -199,20 +199,17 @@ const ProductDetail = () => {
                       </span>
                     </div>
                     <div
+                     className="button-main"
                       style={{
                         width: '195px',
                         height: '50px',
-                        backgroundColor: '#FF9592',
-                        display: 'flex',
-                        justifyContent: 'center',
-                        alignItems: 'center',
+                   
                       }}
                     >
                       <span
                         style={{
                           fontWeight: '700',
                           fontSize: '14px',
-                          color: '#000',
                         }}
                       >
                         Add to card

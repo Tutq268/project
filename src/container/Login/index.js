@@ -1,14 +1,14 @@
 import React from 'react';
 import useSticky from './../../component/hooks/useSticky.js';
 import Navbar from './../../component/Navbar/Navbar';
-import { Col, Row, Rate, Menu, Dropdown, Button, Input } from 'antd';
+import {  Button, Input } from 'antd';
 import Footer from './../../component/Footer/Footer';
 import { UserOutlined,LockOutlined  } from '@ant-design/icons';
+import {NavLink} from 'react-router-dom'
 
 
 const Login = () => {
   const { isSticky, element } = useSticky();
-
   const suffix = (
     <UserOutlined
       style={{
@@ -47,8 +47,13 @@ const Login = () => {
                     suffix={suffix2}
                 />
                  <div style={{marginTop:'20px'}}>
-                    <Button style={{width: '440px',backgroundColor:'#FF9592',size:'large',height:'50px',fontWeight:'bold'}}>
-                        Submit
+                    <Button style={{width: '440px',backgroundColor:'#FF9592',size:'large',height:'50px',fontWeight:'bold',color: 'black'}} onClick={()=>{
+                      localStorage.setItem("tokenWeb","tokenWeb")
+                    }}>
+                       <NavLink to="/">
+                       Submit
+                       </NavLink>
+                        
                     </Button>
                     </div>
                     <div style={{marginTop:'20px',textAlign:'center'}}>
@@ -59,7 +64,7 @@ const Login = () => {
                     </div>
                     <div style={{marginTop:'20px'}}>
                     <Button style={{width: '231px',backgroundColor:'#FF9592',size:'large',height:'50px',fontWeight:'bold'}}>
-                        Sign Up
+                      Sign Up
                     </Button>
                     </div>
                     <div style={{marginTop:'20px',textAlign:'center'}}>

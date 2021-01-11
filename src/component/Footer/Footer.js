@@ -1,5 +1,6 @@
 import React from 'react';
 import { Col, Row } from 'antd';
+import {BavLinh, NavLink} from 'react-router-dom'
 
 const Footer = () => {
   return (
@@ -20,51 +21,53 @@ const Footer = () => {
               alt="logo main"
             />
             <div style={{ display: 'flex', flexDirection: 'row' }}>
-              <p
+            <NavLink to="/"
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',fontFamily:'Lato' }}
               >
                 Home
-              </p>
+              </NavLink>
               <p
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',marginRight:'3px',marginLeft:'3px',fontFamily:'Lato' }}
               >
                 |{' '}
               </p>
-              <p
+              <NavLink to="/store"
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',fontFamily:'Lato' }}
               >
                 Shop
-              </p>
+              </NavLink>
               <p
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',marginRight:'3px',marginLeft:'3px',fontFamily:'Lato' }}
               >
                 |{' '}
               </p>
-              <p
+             <NavLink to="/kits"
+
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',fontFamily:'Lato' }}
               >
                 Kits
-              </p>
+              </NavLink>
               <p
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',marginRight:'3px',marginLeft:'3px',fontFamily:'Lato' }}
               >
                 |{' '}
               </p>
-              <p
+              <NavLink to="/about"
+
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',fontFamily:'Lato' }}
               >
                 About
-              </p>
+              </NavLink>
               <p
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',marginRight:'3px',marginLeft:'3px',fontFamily:'Lato' }}
               >
                 |{' '}
               </p>
-              <p
+              <NavLink to="/policy"
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',fontFamily:'Lato' }}
               >
                 Shipping policy
-              </p>
+              </NavLink>
             </div>
             <p
               style={{ fontWeight: '300', fontSize: '14px', color: '#FAFAFA' }}

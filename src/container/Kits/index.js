@@ -216,21 +216,18 @@ const Kits = () => {
                 </span>
               </span>
               <div
+               className="button-main"
                 style={{
                   marginTop: '50px',
                   width: '236px',
                   height: '50px',
-                  backgroundColor: '#FF9592',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
+                 
                 }}
               >
                 <span
                   style={{
                     fontWeight: '700',
                     fontSize: '14px',
-                    color: '#000',
                   }}
                 >
                   Add to cart
@@ -358,21 +355,18 @@ const Kits = () => {
                 </span>
               </span>
               <div
+               className="button-main"
                 style={{
                   marginTop: '50px',
                   width: '236px',
                   height: '50px',
-                  backgroundColor: '#FF9592',
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
+                 
                 }}
               >
                 <span
                   style={{
                     fontWeight: '700',
                     fontSize: '14px',
-                    color: '#000',
                   }}
                 >
                   Add to cart

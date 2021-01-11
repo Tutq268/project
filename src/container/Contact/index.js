@@ -195,7 +195,7 @@ const Contact = () => {
 
                   </div>
                   <div style={{marginTop:'20px'}}>
-                    <Button style={{width: '100%',backgroundColor:'#565556',color: '#fff',size:'large',height:'50px'}}>
+                    <Button style={{width: '100%',size:'large',height:'50px'}}  className="button-main">
                         Submit
                     </Button>
                     </div>
