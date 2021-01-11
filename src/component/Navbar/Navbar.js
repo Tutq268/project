@@ -311,77 +311,7 @@ const Navbar = ({ sticky }) => {
                 Submit
               </Button>
             </div>
-            <div style={{ marginTop: '39px' }}>
-              <div
-                style={{
-                  display: 'flex',
-                  flexDirection: 'row',
-                  alignItems: 'flex-end',
-                }}
-              >
-                <img
-                  src="./image/modal/modal1.png"
-                  style={{
-                    width: '140px',
-                    height: '170px',
-                    marginRight: '30px',
-                  }}
-                  alt="product"
-                />
-
-                <div style={{ display: 'flex', flexDirection: 'column' }}>
-                  <p
-                    style={{
-                      fontWeight: '700',
-                      fontFamily: 'Lato',
-                      fontSize: '14px',
-                    }}
-                  >
-                    APHRO the pearly goddess foaming cleanser
-                  </p>
-                  <p
-                    style={{
-                      fontFamily: 'Lato',
-                      fontWeight: '300',
-                      fontSize: '14px',
-                    }}
-                  >
-                    50ml
-                  </p>
-                  <p
-                    style={{
-                      fontFamily: 'Lato',
-                      fontWeight: '300',
-                      fontSize: '14px',
-                    }}
-                  >
-                    $ 34
-                  </p>
-                  <div
-                    style={{
-                      width: '138px',
-                      height: '42px',
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'space-between',
-                      border: 'solid 1px black',
-                      paddingLeft: '10px',
-                      paddingRight: '10px',
-                    }}
-                  >
-                    <span style={{ fontWeight: '700', fontSize: '14px' }}>
-                      -
-                    </span>
-                    <span style={{ fontWeight: '700', fontSize: '14px' }}>
-                      1
-                    </span>
-                    <span style={{ fontWeight: '700', fontSize: '14px' }}>
-                      +
-                    </span>
-                  </div>
-                </div>
-              </div>
-            </div>
+            
           </div>
         </div>
       </Modal>
@@ -553,7 +483,7 @@ const Navbar = ({ sticky }) => {
                 Add all items to shopping cart
               </Button>
             </div>
-            <div style={{ marginTop: '39px' }}>
+            {/* <div style={{ marginTop: '39px' }}>
               <div
                 style={{
                   display: 'flex',
@@ -631,7 +561,7 @@ const Navbar = ({ sticky }) => {
                   ></div>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </Modal>
