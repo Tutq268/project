@@ -67,14 +67,8 @@ const Contact = () => {
                 style={{ padding: '30px' }}
               >
                 <div
-                  style={{
-                    border: 'solid 1px black',
-                    borderBottom: 'solid 5px black',
-                    padding: '18px 32px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    flexDirection:'column'
-                  }}
+                className="contact-change"
+                 
                 >
                   <p style={{ fontWeight: '500', marginBottom: '18px' }}>
                     Phone
@@ -84,7 +78,7 @@ const Contact = () => {
                     Morbi scelerisque imperdiet facilisis. Nullam in risus
                     justo.{' '}
                   </p>
-                  <p>+84 999 999 999</p>
+                  <p className="text" style={{textDecoration:'underline'}}> +84 999 999 999</p>
                 </div>
               </Col>
               <Col
@@ -113,7 +107,7 @@ const Contact = () => {
                     Morbi scelerisque imperdiet facilisis. Nullam in risus
                     justo.{' '}
                   </p>
-                  <p style={{color:"#FF9592"}}>example.info@gmail.com</p>
+                  <p style={{color:"#FF9592",textDecoration:'underline'}}>example.info@gmail.com</p>
                 </div>
               </Col>
               <Col
@@ -125,14 +119,7 @@ const Contact = () => {
                 style={{ padding: '30px' }}
               >
                 <div
-                  style={{
-                    border: 'solid 1px black',
-                    borderBottom: 'solid 5px black',
-                    padding: '18px 32px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    flexDirection:'column'
-                  }}
+                 className="contact-change"
                 >
                   <p style={{ fontWeight: '500', marginBottom: '18px' }}>
                   Live Chat
@@ -142,7 +129,7 @@ const Contact = () => {
                     Morbi scelerisque imperdiet facilisis. Nullam in risus
                     justo.{' '}
                   </p>
-                  <p>Submit</p>
+                  <p className="text" style={{textDecoration:'underline'}}>Submit</p>
                 </div>
               </Col>
             </Row>
@@ -195,7 +182,7 @@ const Contact = () => {
 
                   </div>
                   <div style={{marginTop:'20px'}}>
-                    <Button style={{width: '100%',size:'large',height:'50px'}}  className="button-main">
+                    <Button style={{width: '100%',size:'large',height:'50px',fontFamily:'Lato'}}  className="button-main">
                         Submit
                     </Button>
                     </div>

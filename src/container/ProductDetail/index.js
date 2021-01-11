@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import useSticky from './../../component/hooks/useSticky.js';
 import Navbar from './../../component/Navbar/Navbar';
 import { Col, Row, Rate, Menu, Dropdown, Button, Input } from 'antd';
@@ -12,6 +12,7 @@ import { DownOutlined } from '@ant-design/icons';
 SwiperCore.use([Pagination]);
 
 const ProductDetail = () => {
+  const [image,setImage] = useState("./image/Home/heart-1.png")
   const { isSticky, element } = useSticky();
   const menu = (
     <Menu>
@@ -48,7 +49,7 @@ const ProductDetail = () => {
                     justifyContent: 'center',
                   }}
                 >
-                  <img src="./image/Product/product1.png" alt="product 1" />
+                  <img src="./image/Product/product1.png" style={{width: '549px',height:'707px'}} alt="product 1" />
                   <div
                     style={{
                       display: 'flex',
@@ -210,9 +211,10 @@ const ProductDetail = () => {
                         style={{
                           fontWeight: '700',
                           fontSize: '14px',
+                          fontFamily:'Lato'
                         }}
                       >
-                        Add to card
+                        wishto card
                       </span>
                     </div>
                   </div>
@@ -259,13 +261,14 @@ const ProductDetail = () => {
                         alignItems: 'center',
                         cursor: 'pointer',
                       }}
+                      onMouseEnter={() => setImage("./image/Product/heartpink.png")} onMouseLeave={() => setImage("./image/Home/heart-1.png")}
                     >
-                      <img src="./image/Home/heart-1.png" alt="heart circle" />
+                      <img src={image}  alt="heart circle" />
                       <span
+                      className="addWishlist"
                         style={{
                           fontWeight: '700',
                           fontSize: '14px',
-                          color: '#000',
                           marginLeft: '7px',
                         }}
                       >

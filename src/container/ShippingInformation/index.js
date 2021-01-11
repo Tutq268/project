@@ -526,6 +526,7 @@ const ShippingInfo = () => {
                       style={{
                         fontWeight: '700',
                         fontSize: '14px',
+                        fontFamily:'Lato'
                       }}
                     >
                       Apply

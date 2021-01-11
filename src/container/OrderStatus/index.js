@@ -330,6 +330,7 @@ const OrderStatus = () => {
                     style={{
                       fontWeight: '700',
                       fontSize: '14px',
+                      fontFamily:'Lato'
                     }}
                   >
                    Continue shopping

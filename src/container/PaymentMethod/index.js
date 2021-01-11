@@ -367,12 +367,14 @@ const PaymentMethod = () => {
                           style={{
                             width: '142px',
                             height: '45px',
+                            fontFamily:'Lato'
                           }}
                         >
                           <span
                             style={{
                               fontWeight: '700',
                               fontSize: '14px',
+                              fontFamily:'Lato'
                             }}
                           >
                             Pay now
@@ -534,12 +536,14 @@ const PaymentMethod = () => {
                     style={{
                       width: '142px',
                       height: '45px',
+                      fontFamily:'Lato'
                     }}
                   >
                     <span
                       style={{
                         fontWeight: '700',
                         fontSize: '14px',
+                        fontFamily:'Lato'
                       }}
                     >
                       Apply

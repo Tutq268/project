@@ -228,6 +228,7 @@ const Kits = () => {
                   style={{
                     fontWeight: '700',
                     fontSize: '14px',
+                    fontFamily:'Lato'
                   }}
                 >
                   Add to cart
@@ -367,6 +368,7 @@ const Kits = () => {
                   style={{
                     fontWeight: '700',
                     fontSize: '14px',
+                    fontFamily:'Lato'
                   }}
                 >
                   Add to cart

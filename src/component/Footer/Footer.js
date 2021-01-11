@@ -93,7 +93,7 @@ const Footer = () => {
             <p
               style={{
                 color: '#FAFAFA',
-                fontWeight: '300',
+                fontWeight: '400',
                 fontSize: '14px',
                 marginTop: '19px',
                 fontFamily: 'Lato',

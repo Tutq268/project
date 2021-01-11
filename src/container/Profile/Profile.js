@@ -3,6 +3,7 @@ import useSticky from './../../component/hooks/useSticky.js';
 import Navbar from './../../component/Navbar/Navbar';
 import { Table } from 'antd';
 import Footer from './../../component/Footer/Footer';
+import { NavLink } from 'react-router-dom';
 // import { UserOutlined, LockOutlined } from '@ant-design/icons';
 const data1 = [
   {
@@ -55,7 +56,9 @@ const Profile = () => {
       render: item =>{
           return(
             <div style={{minWidth: '25em'}}>
-                <p>{item}</p>
+              <NavLink to="/order-status">
+                <p style={{color:'#000'}}>{item}</p>
+                </NavLink>
               </div>
           )
       }

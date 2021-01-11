@@ -9,7 +9,8 @@ const Navbar = ({ sticky }) => {
   const [isModalVisible, setIsModalVisible] = useState(false);
   const [isModalWishList, setIsModaWishList] = useState(false);
   const [isModalLogin, setIsModalLogin] = useState(false);
-const [isCheckout,setIsCheckout] = useState(false)
+  const [clickSearch, setClickSearch] = useState(false);
+  const [isCheckout, setIsCheckout] = useState(false);
   const handleOk = () => {
     setIsModalVisible(false);
     setIsModaWishList(false);
@@ -23,7 +24,6 @@ const [isCheckout,setIsCheckout] = useState(false)
   };
 
   return (
-    
     <div>
       {isCheckout && <Redirect to="/shipping-information" />}
       <nav
@@ -80,6 +80,30 @@ const [isCheckout,setIsCheckout] = useState(false)
             </li>
           </ul>
           <ul className="navbar-nav">
+            <li
+              className="nav-item active menu-left"
+              // style={{width: clickSearch && '500px',borderBottom: clickSearch && 'solid 1px black'}}
+              style={{ cursor: 'pointer' }}
+            >
+              <div
+                style={{
+                  width: '500px',
+                  borderBottom: clickSearch ? 'solid 1px black' : '',
+                  display:'flex',
+                  justifyContent:'flex-end',
+                  paddingBottom:'2px'
+                }}
+              >
+                <img
+                  onClick={() => {
+                    setClickSearch(!clickSearch);
+                  }}
+                  src="./image/Home/search.png"
+                  alt="vector"
+                  style={{ width: '23px', height: '23px' }}
+                />
+              </div>
+            </li>
             <li className="nav-item active menu-left">
               <NavLink to={token ? '/profile' : '/login'}>
                 <img
@@ -97,8 +121,8 @@ const [isCheckout,setIsCheckout] = useState(false)
               className="nav-item active menu-left"
               onClick={() => {
                 setIsModaWishList(true);
-                setIsModalVisible(false)
-                setIsModalLogin(false)
+                setIsModalVisible(false);
+                setIsModalLogin(false);
               }}
               style={{ cursor: 'pointer' }}
             >
@@ -112,8 +136,8 @@ const [isCheckout,setIsCheckout] = useState(false)
               className="nav-item active"
               onClick={() => {
                 setIsModalVisible(true);
-                setIsModaWishList(false)
-                setIsModalLogin(false)
+                setIsModaWishList(false);
+                setIsModalLogin(false);
               }}
               style={{ cursor: 'pointer' }}
             >
@@ -264,21 +288,22 @@ const [isCheckout,setIsCheckout] = useState(false)
             </p>
             <div style={{ marginTop: '30px' }}>
               <Button
-               className="button-main"
+                className="button-main"
                 style={{
                   width: '100%',
                   size: 'large',
                   height: '50px',
+                  fontFamily: 'Lato',
                 }}
                 onClick={() => {
                   if (token) {
-                    setIsCheckout(true)
+                    setIsCheckout(true);
                     setIsModaWishList(false);
-                    setIsModalVisible(false)
-                    setIsModalLogin(false)
+                    setIsModalVisible(false);
+                    setIsModalLogin(false);
                   } else {
                     setIsModaWishList(false);
-                    setIsModalVisible(false)
+                    setIsModalVisible(false);
                     setIsModalLogin(true);
                   }
                 }}
@@ -504,10 +529,10 @@ const [isCheckout,setIsCheckout] = useState(false)
             </p>
             <div style={{ marginTop: '30px' }}>
               <Button
-               className="button-main"
+                className="button-main"
                 style={{
                   width: '100%',
-                  
+                  fontFamily: 'Lato',
                   size: 'large',
                   height: '50px',
                 }}
@@ -517,10 +542,10 @@ const [isCheckout,setIsCheckout] = useState(false)
             </div>
             <div style={{ marginTop: '10px' }}>
               <Button
-               className="button-main"
+                className="button-main"
                 style={{
                   width: '100%',
-                
+                  fontFamily: 'Lato',
                   size: 'large',
                   height: '50px',
                 }}
@@ -653,14 +678,14 @@ const [isCheckout,setIsCheckout] = useState(false)
             </p>
           </div>
 
-          <NavLink to="/login" style={{ marginTop: '90px',width:'100%' }}>
+          <NavLink to="/login" style={{ marginTop: '90px', width: '100%' }}>
             <Button
               style={{
                 width: '100%',
                 backgroundColor: '#FF9592',
                 color: '#000',
                 size: 'large',
-                height: '50px'
+                height: '50px',
               }}
               onClick={() => setIsModalLogin(false)}
             >

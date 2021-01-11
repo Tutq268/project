@@ -84,3 +84,34 @@ alignItems: 'center', */
 table thead {
   display: none
 }
+
+.addWishlist{
+  color: #000
+}
+
+.addWishlist:hover{
+  color: #FF9592
+}
+
+.contact-change{
+  border-bottom: solid 5px black;
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+  border-top: solid 1px black;
+  padding: 18px 32px;
+  display: flex;
+  align-items: center;
+  flex-direction:column;
+  cursor: pointer
+}
+
+.contact-change:hover{
+  border-bottom: solid 5px #FF9592;
+  border-left: solid 1px black;
+  border-right: solid 1px black;
+  border-top: solid 1px black;
+}
+
+.contact-change:hover .text{
+  color: #FF9592
+}

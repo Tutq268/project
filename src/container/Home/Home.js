@@ -322,6 +322,7 @@ const Home = () => {
                   style={{
                     fontWeight: '700',
                     fontSize: '14px',
+                    fontFamily:'Lato'
                   }}
                 >
                   VIEW DETAILS
@@ -376,6 +377,7 @@ const Home = () => {
                 style={{
                   fontWeight: '700',
                   fontSize: '14px',
+                  fontFamily:'Lato'
                 }}
               >
                 SIGN IN
