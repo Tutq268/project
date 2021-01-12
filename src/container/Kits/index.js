@@ -117,7 +117,7 @@ const Kits = () => {
                 alignItems: 'center',
               }}
             >
-              <span style={{ fontWeight: 'bold', fontSize: '36px' }}>
+              <span style={{ fontWeight: 'bold', fontSize: '36px',fontFamily:'Playfair Display' }}>
                 Core Series
               </span>
               <span
@@ -126,6 +126,7 @@ const Kits = () => {
                   marginBottom: '35px',
                   fontWeight: '400',
                   fontSize: '48px',
+                  fontFamily:'Playfair Display'
                 }}
               >
                 The Pearly Goddess
@@ -257,7 +258,7 @@ const Kits = () => {
                 alignItems: 'center',
               }}
             >
-              <span style={{ fontWeight: 'bold', fontSize: '36px' }}>
+              <span style={{ fontWeight: 'bold', fontSize: '36px',fontFamily:'Playfair Display' }}>
                 Supplement Series
               </span>
               <span
@@ -266,6 +267,7 @@ const Kits = () => {
                   marginBottom: '35px',
                   fontWeight: '400',
                   fontSize: '48px',
+                  fontFamily:'Playfair Display'
                 }}
               >
                 The Beauty Spell

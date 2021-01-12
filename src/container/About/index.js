@@ -7,6 +7,7 @@ import 'swiper/components/navigation/navigation.scss';
 import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
 import Footer from './../../component/Footer/Footer';
+import { NavLink } from 'react-router-dom';
 
 const About = () => {
   const { isSticky, element } = useSticky();
@@ -34,6 +35,7 @@ const About = () => {
                     fontWeight: '700',
                     fontSize: '36px',
                     marginBottom: '25px',
+                    fontFamily:'Playfair Display'
                   }}
                 >
                   Welcome To
@@ -75,7 +77,7 @@ const About = () => {
                       justifyContent: 'flex-start',
                     }}
                   >
-                    <p style={{ fontWeight: '700', fontSize: '36px' }}>
+                    <p style={{ fontWeight: '700', fontSize: '36px',fontFamily:'Playfair Display' }}>
                       Our Inspiration
                     </p>
                     <p style={{ fontFamily: 'Lato' }}>
@@ -108,7 +110,7 @@ const About = () => {
                       width: '220px',
                     }}
                   >
-                    <p style={{ fontSize: '36px', fontWeight: '700' }}>
+                    <p style={{ fontSize: '36px', fontWeight: '700',fontFamily:'Playfair Display' }}>
                       Our Products
                     </p>
                     <p style={{ fontWeight: '400', fontFamily: 'Lato' }}>
@@ -216,7 +218,7 @@ const About = () => {
                   </div>
 
                   <div style={{ display: 'flex', flexDirection: 'column' }}>
-                    <p style={{ fontSize: '36px', fontWeight: '700' }}>
+                    <p style={{ fontSize: '36px', fontWeight: '700',fontFamily:'Playfair Display' }}>
                       The Story Of Us
                     </p>
                     <p style={{ fontFamily: 'Lato', fontWeight: '400' }}>
@@ -270,14 +272,14 @@ const About = () => {
                       height: '50px',
                     }}
                   >
-                    <span
+                    <NavLink to="/contact"
                       style={{
                         fontWeight: '700',
                         fontSize: '14px',
                       }}
                     >
                       Contact us
-                    </span>
+                    </NavLink>
                   </div>
                 </div>
               </div>

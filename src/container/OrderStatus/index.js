@@ -6,6 +6,7 @@ import { dataShip,data1,data2 } from './data';
 import { Col, Row, Rate, Input,Table } from 'antd';
 // import Footer from "./../../component/Footer/Footer"
 import Footer from './../../component/Footer/Footer';
+import { NavLink } from 'react-router-dom';
 
 const OrderStatus = () => {
     const columns1 = [
@@ -49,7 +50,7 @@ const OrderStatus = () => {
           key: 'status',
           render: (item) => {
             return (
-              <div style={{ padding: '0 20px' }}>
+              <div>
                 <p style={{ fontWeight: '700', fontFamily: 'Lato' }}>{item}</p>
               </div>
             );
@@ -64,6 +65,7 @@ const OrderStatus = () => {
                 style={{
                   fontWeight: '300',
                   fontFamily: 'Lato',
+                  textAlign: 'right'
                 }}
               >
                 {item}
@@ -99,6 +101,7 @@ const OrderStatus = () => {
                   marginBottom: '30px',
                   fontSize: '36px',
                   fontWeight: '700',
+                  fontFamily:'Playfair Display'
                 }}
               >
                 Thank you for your purchase
@@ -237,6 +240,7 @@ const OrderStatus = () => {
                             fontFamily: 'Lato',
                             fontWeight: '700',
                             fontSize: '14px',
+                            marginRight:'22px'
                           }}
                         >
                           $ 34
@@ -319,7 +323,7 @@ const OrderStatus = () => {
                 >
                     Need help? <span style={{color: '#FF9592',textDecoration:'underline'}}>Contact us</span>
                 </span>
-                <div
+                <NavLink to="/"
                   className="button-main"
                   style={{
                     width: '300px',
@@ -335,7 +339,7 @@ const OrderStatus = () => {
                   >
                    Continue shopping
                   </span>
-                </div>
+                </NavLink>
               </div>
             </div>
           </div>

@@ -32,7 +32,7 @@ const Login = () => {
       <main style={{ backgroundColor: '#FAFAFA' }}>
         <section className="welcome">
           <div ref={element} style={{display:'flex',height: '100%',flexDirection:'column',justifyContent:'center',alignItems:'center',paddingTop:'120px'}}>
-                <p style={{fontSize:'48px',fontWeight: '700',marginTop:'50px'}}>LOGIN</p>
+                <p style={{fontSize:'48px',fontWeight: '700',marginTop:'50px',fontFamily:'Playfair Display'}}>LOGIN</p>
                 <Input 
                 size="large"
                      style={{ fontFamily:'Lato',fontWeight:'bold',fontSize:'14px',width: '440px'}}

@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import SwiperCore, {
   Navigation,
   Pagination,
@@ -23,7 +23,10 @@ import { NavLink } from 'react-router-dom';
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const Home = () => {
+  const blackHeart = "./image/Home/blackHeart.png"
+  const roundHeart = "./image/Home/heart-1.png"
   const { isSticky, element } = useSticky();
+  const [heartUrl,setHeartUrl] = useState(-1)
   SwiperCore.use([Autoplay]);
   return (
     <div>
@@ -66,6 +69,7 @@ const Home = () => {
                 fontWeight: 'bold',
                 fontSize: '36px',
                 marginBottom: '10px',
+                fontFamily:'Playfair Display'
               }}
             >
               Be Aphrodite Everyday
@@ -105,6 +109,9 @@ const Home = () => {
                           backgroundPosition: 'center',
                           backgroundSize: 'cover',
                         }}
+                        onMouseEnter={() => setHeartUrl(index)}
+                        onMouseLeave={() => setHeartUrl(-1)}
+                        
                       >
                         <div
                           style={{
@@ -127,7 +134,7 @@ const Home = () => {
                           </span>
                           <img
                             alt="Vector"
-                            src="./image/Home/blackHeart.png"
+                            src={heartUrl === index ? blackHeart : roundHeart}
                             style={{ width: '23px', height: '21px' }}
                           />
                         </div>
@@ -205,6 +212,7 @@ const Home = () => {
                         fontSize: '120px',
                         fontWeight: '700',
                         color: '#F59393',
+                        fontFamily:'Playfair Display'
                       }}
                     >
                       Classic Beauty
@@ -236,7 +244,7 @@ const Home = () => {
                       Our skincare essentials are clean, cruelty-free and free
                       of parabens, sulfates, and phthalates, among others.
                     </p>
-                    <p
+                    <NavLink to="/about"
                       style={{
                         marginTop: '27px',
                         textDecoration: 'underline',
@@ -244,7 +252,7 @@ const Home = () => {
                       }}
                     >
                       Get to know more about us
-                    </p>
+                    </NavLink>
                   </div>
                 </div>
               </Col>
@@ -264,6 +272,7 @@ const Home = () => {
                 fontWeight: 'bold',
                 fontSize: '36px',
                 marginBottom: '10px',
+                fontFamily:'Playfair Display'
               }}
             >
               Discover the Aphro’s Kits
@@ -370,7 +379,7 @@ const Home = () => {
                 height: '50px',
               }}
             >
-              <span
+              <NavLink to="/login"
                 style={{
                   fontWeight: '700',
                   fontSize: '14px',
@@ -378,7 +387,7 @@ const Home = () => {
                 }}
               >
                 SIGN IN
-              </span>
+              </NavLink>
             </div>
           </div>
           <Footer />

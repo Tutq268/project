@@ -131,7 +131,7 @@ const ProductDetail = () => {
                     flexDirection: 'column',
                   }}
                 >
-                  <p style={{ fontWeight: '700', fontSize: '24px' }}>
+                  <p style={{ fontWeight: '700', fontSize: '24px',fontFamily:'Playfair Display' }}>
                     Pearly Goddess Gentle Make-up Remover
                   </p>
                   <p
@@ -359,6 +359,7 @@ const ProductDetail = () => {
                   fontSize: '36px',
                   marginBottom: '10px',
                   textAlign: 'center',
+                  fontFamily:'Playfair Display'
                 }}
               >
                 Review from the Aphro’s Community
@@ -534,6 +535,7 @@ const ProductDetail = () => {
                       fontWeight: '700',
                       marginBottom: '30px',
                       fontSize: '24px',
+                      fontFamily:'Playfair Display'
                     }}
                   >
                     You have tried this product?

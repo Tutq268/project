@@ -118,3 +118,7 @@ table thead {
 .swiper-pagination-bullet-active {
   background-color: #000;
 }
+
+input[type=checkbox] {
+  background: grey;
+}

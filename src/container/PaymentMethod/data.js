@@ -24,13 +24,13 @@ export const dataShip = [
       id: 0
     },
     {
-        contact: 'Contact',
+        contact: 'Address',
         order: '16/643 Pham Van Dong st. Co Nhue 1, Bac Tu Liem, Hanoi ',
         status: 'Change',
         id: 1
     },
     {
-        contact: 'Contact',
+        contact: 'Method',
         order: ' Cash on delivery',
       status: '',
       id: 2

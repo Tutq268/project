@@ -20,57 +20,55 @@ const data1 = [
     id: '#913',
     order: '',
     status: 'Delivered 7/02/2020',
-  }
+  },
 ];
 
 const data2 = [
-    {
-      id: '+84 934 523 337',
-      order: 'Contact',
-      status: 'Change',
-    },
-    {
-      id: '16/643 Pham Van Dong st. Co Nhue 1, Bac Tu Liem, Hanoi',
-      order: 'Contact',
-      status: 'Delivered 12/08/2020',
-    }
-  ];
-  
+  {
+    id: '+84 934 523 337',
+    order: 'Contact',
+    status: 'Change',
+  },
+  {
+    id: '16/643 Pham Van Dong st. Co Nhue 1, Bac Tu Liem, Hanoi',
+    order: 'Contact',
+    status: 'Delivered 12/08/2020',
+  },
+];
+
 const Profile = () => {
   const { isSticky, element } = useSticky();
   const columns = [
     {
       dataIndex: 'order',
       key: 'order',
-      render : item =>{
-          return(
-            <div style={{padding: '0 20px'}}>
-          <p style={{fontWeight: 'bold',fontFamily: 'Lato'}}>{item}</p>
+      render: (item) => {
+        return (
+          <div style={{ padding: '0 20px' }}>
+            <p style={{ fontWeight: '300', fontFamily: 'Lato' }}>{item}</p>
           </div>
-          )
-      }
+        );
+      },
     },
     {
       dataIndex: 'id',
       key: 'id',
-      render: item =>{
-          return(
-            <div style={{minWidth: '25em'}}>
-              <NavLink to="/order-status">
-                <p style={{color:'#000'}}>{item}</p>
-                </NavLink>
-              </div>
-          )
-      }
+      render: (item) => {
+        return (
+          <div style={{ minWidth: '25em' }}>
+            <NavLink to="/order-status">
+              <p style={{ color: '#000',fontWeight:'400' }}>{item}</p>
+            </NavLink>
+          </div>
+        );
+      },
     },
     {
       dataIndex: 'status',
       key: 'status',
-      render : item =>{
-        return(
-        <p style={{fontWeight: 'bold',fontFamily: 'Lato'}}>{item}</p>
-        )
-    }
+      render: (item) => {
+        return <p style={{ fontWeight: '300', fontFamily: 'Lato' }}>{item}</p>;
+      },
     },
   ];
 
@@ -78,33 +76,42 @@ const Profile = () => {
     {
       dataIndex: 'order',
       key: 'order',
-      render : item =>{
-          return(
-            <div style={{padding: '0 20px'}}>
-          <p style={{fontWeight: 'bold',fontFamily: 'Lato'}}>{item}</p>
+      render: (item) => {
+        return (
+          <div style={{ padding: '0 20px' }}>
+            <p style={{ fontWeight: '300', fontFamily: 'Lato' }}>{item}</p>
           </div>
-          )
-      }
+        );
+      },
     },
     {
       dataIndex: 'id',
       key: 'id',
-      render: item =>{
-          return(
-              <div style={{minWidth: '25em'}}>
-                <p>{item}</p>
-              </div>
-          )
-      }
+      render: (item) => {
+        return (
+          <div style={{ minWidth: '25em' }}>
+            <p style={{fontWeight:'400'}}>{item}</p>
+          </div>
+        );
+      },
     },
     {
       dataIndex: 'status',
       key: 'status',
-      render : item =>{
-        return(
-        <p style={{fontWeight: 'bold',fontFamily: 'Lato',color:'#FF9592',textDecoration:'underline'}}>{item}</p>
-        )
-    }
+      render: (item) => {
+        return (
+          <p
+            style={{
+              fontWeight: '300',
+              fontFamily: 'Lato',
+              color: '#FF9592',
+              textDecoration: 'underline',
+            }}
+          >
+            {item}
+          </p>
+        );
+      },
     },
   ];
 
@@ -125,7 +132,12 @@ const Profile = () => {
             }}
           >
             <p
-              style={{ fontSize: '48px', fontWeight: '700', marginTop: '50px' }}
+              style={{
+                fontSize: '48px',
+                fontWeight: '700',
+                marginTop: '50px',
+                fontFamily: 'Playfair Display',
+              }}
             >
               WELCOME BACK
             </p>
@@ -136,6 +148,7 @@ const Profile = () => {
                 flexDirection: 'row',
                 justifyContent: 'center',
                 alignItems: 'center',
+                marginBottom:'60px'
               }}
             >
               <img
@@ -197,37 +210,54 @@ const Profile = () => {
               dataSource={data1}
               pagination={false}
               rowKey={(record) => record.id}
+              style={{border: 'solid 1px #cecece',width:'700px'}}
             />
-            <div style={{marginTop: '40px'}}>
-            <Table
-              columns={columns2}
-              dataSource={data2}
-              pagination={false}
-              rowKey={(record) => record.id}
-            />
+            <div style={{ marginTop: '40px',border: 'solid 1px #cecece' }}>
+              <Table
+                columns={columns2}
+                dataSource={data2}
+                pagination={false}
+                rowKey={(record) => record.id}
+                style={{width:'700px'}}
+              />
             </div>
-            <div style={{marginTop: '40px',paddingBottom: '200px',display:'flex',flexDirection:'row',alignItems:'center'}}>
-                <o>Need help? <soan style={{textDecoration:'underline',color: '#FF9592',marginRight:'15em'}}>Contact us</soan></o>
-                <div
+            <div
               style={{
-                width: '236px',
-                height:'50px',
-                backgroundColor: '#FF9592',
+                marginTop: '40px',
+                paddingBottom: '200px',
                 display: 'flex',
-                justifyContent: 'center',
+                flexDirection: 'row',
                 alignItems: 'center',
               }}
             >
-              <span
+              <p>
+                Need help?{' '}
+                <NavLink to="/contact"
+                  style={{
+                    textDecoration: 'underline',
+                    color: '#FF9592',
+                    marginRight: '15em',
+                  }}
+                >
+                  Contact us
+                </NavLink>
+              </p>
+              <NavLink to="/"
+                className="button-main"
                 style={{
-                  fontWeight: '700',
-                  fontSize: '14px',
-                  color: '#000',
+                  width: '236px',
+                  height: '50px',
                 }}
               >
-                   Continue shopping
-              </span>
-            </div>
+                <span
+                  style={{
+                    fontWeight: '700',
+                    fontSize: '14px',
+                  }}
+                >
+                  Continue shopping
+                </span>
+              </NavLink>
             </div>
           </div>
         </section>

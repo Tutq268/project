@@ -43,6 +43,7 @@ const Contact = () => {
                   fontWeight: '700',
                   fontSize: '48px',
                   marginBottom: '36px',
+                  fontFamily:'Playfair Display'
                 }}
               >
                 CONTACT
@@ -90,16 +91,9 @@ const Contact = () => {
                 style={{ padding: '30px' }}
               >
                 <div
-                  style={{
-                    border: 'solid 1px black',
-                    borderBottom: 'solid 5px #FF9592',
-                    padding: '18px 32px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    flexDirection:'column'
-                  }}
+                   className="contact-change"
                 >
-                  <p style={{ fontWeight: '500', marginBottom: '18px',color:"#FF9592" }}>
+                  <p style={{ fontWeight: '500', marginBottom: '18px' }}>
                   Mail
                   </p>
                   <p style={{ textAlign: 'center', marginBottom: '18px',lineHeight:'27px' }}>
@@ -107,7 +101,7 @@ const Contact = () => {
                     Morbi scelerisque imperdiet facilisis. Nullam in risus
                     justo.{' '}
                   </p>
-                  <p style={{color:"#FF9592",textDecoration:'underline'}}>example.info@gmail.com</p>
+                  <p className="text">example.info@gmail.com</p>
                 </div>
               </Col>
               <Col
@@ -154,7 +148,7 @@ const Contact = () => {
                 xs={24}
                 style={{ padding: '0 50px' }}
               >
-                  <p style={{fontWeight:'700',fontSize:'36px',marginBottom:'18px'}}>Drop us a message</p>
+                  <p style={{fontWeight:'700',fontSize:'36px',marginBottom:'18px',fontFamily:'Playfair Display'}}>Drop us a message</p>
                   <p style={{fontWeight:'400'}}>Have some suggestion or just want to say hi? Contact us:</p>
 
                 <div style={{marginTop:'20px'}}>

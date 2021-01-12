@@ -23,7 +23,7 @@ const ShippingInfo = () => {
     <UserOutlined
       style={{
         fontSize: 16,
-        cp: 'black',
+        // cp: 'black',
       }}
     />
   );
@@ -31,8 +31,8 @@ const ShippingInfo = () => {
     <DownOutlined
       style={{
         fontSize: 16,
-        color: '#FF9592',
-        cp: '#FF9592',
+        // color: '#FF9592',
+        // cp: '#FF9592',
       }}
     />
   );
@@ -212,7 +212,6 @@ const ShippingInfo = () => {
                       size="large"
                       style={{
                         fontFamily: 'Lato',
-                        fontWeight: 'bold',
                         fontSize: '14px',
                         width: '100%',
                       }}
@@ -227,7 +226,7 @@ const ShippingInfo = () => {
                         alignItems: 'center',
                       }}
                     >
-                      <input
+                      {/* <input
                         type="checkbox"
                         checked
                         style={{
@@ -236,6 +235,11 @@ const ShippingInfo = () => {
                           backgroundColor: '#565556',
                           marginRight: '15px',
                         }}
+                      /> */}
+                      <img
+                        src="./image/shipping/checked.png"
+                        alt="paypal"
+                        style={{ width: '20px', height: '20px', marginRight: '15px', }}
                       />
                       <span style={{ fontFamily: 'Lato' }}>
                         Keep me up to date on news and exclusive offers
@@ -256,7 +260,7 @@ const ShippingInfo = () => {
                           size="large"
                           style={{
                             fontFamily: 'Lato',
-                            fontWeight: 'bold',
+                            // fontWeight: 'bold',
                             fontSize: '14px',
                             width: '50%',
                             marginRight: '10px',
@@ -267,7 +271,7 @@ const ShippingInfo = () => {
                           size="large"
                           style={{
                             fontFamily: 'Lato',
-                            fontWeight: 'bold',
+                            // fontWeight: 'bold',
                             fontSize: '14px',
                             width: '50%',
                             marginLeft: '10px',
@@ -280,7 +284,7 @@ const ShippingInfo = () => {
                           size="large"
                           style={{
                             fontFamily: 'Lato',
-                            fontWeight: 'bold',
+                            // fontWeight: 'bold',
                             fontSize: '14px',
                             width: '100%',
                           }}
@@ -292,7 +296,7 @@ const ShippingInfo = () => {
                           size="large"
                           style={{
                             fontFamily: 'Lato',
-                            fontWeight: 'bold',
+                            // fontWeight: 'bold',
                             fontSize: '14px',
                             width: '100%',
                           }}
@@ -304,7 +308,7 @@ const ShippingInfo = () => {
                           size="large"
                           style={{
                             fontFamily: 'Lato',
-                            fontWeight: 'bold',
+                            // fontWeight: 'bold',
                             fontSize: '14px',
                             width: '100%',
                           }}
@@ -322,7 +326,6 @@ const ShippingInfo = () => {
                           size="large"
                           style={{
                             fontFamily: 'Lato',
-                            fontWeight: 'bold',
                             fontSize: '14px',
                             width: '50%',
                             marginRight: '10px',
@@ -334,7 +337,7 @@ const ShippingInfo = () => {
                           size="large"
                           style={{
                             fontFamily: 'Lato',
-                            fontWeight: 'bold',
+                            // fontWeight: 'bold',
                             fontSize: '14px',
                             width: '50%',
                             marginLeft: '10px',
@@ -347,7 +350,7 @@ const ShippingInfo = () => {
                           size="large"
                           style={{
                             fontFamily: 'Lato',
-                            fontWeight: 'bold',
+                            // fontWeight: 'bold',
                             fontSize: '14px',
                             width: '100%',
                           }}
@@ -362,7 +365,7 @@ const ShippingInfo = () => {
                             color: '#FF9592',
                           }}
                         >
-                          {'<'} Back to card
+                          {'<'} Back to cart
                         </span>
                       </div>
                     </div>

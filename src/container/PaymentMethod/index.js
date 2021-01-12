@@ -188,7 +188,6 @@ const PaymentMethod = () => {
                             size="large"
                             style={{
                               fontFamily: 'Lato',
-                              fontWeight: 'bold',
                               fontSize: '14px',
                               width: '100%',
                             }}
@@ -200,7 +199,6 @@ const PaymentMethod = () => {
                             size="large"
                             style={{
                               fontFamily: 'Lato',
-                              fontWeight: 'bold',
                               fontSize: '14px',
                               width: '100%',
                             }}
@@ -218,7 +216,6 @@ const PaymentMethod = () => {
                             size="large"
                             style={{
                               fontFamily: 'Lato',
-                              fontWeight: 'bold',
                               fontSize: '14px',
                               width: '50%',
                               marginRight: '10px',
@@ -229,7 +226,6 @@ const PaymentMethod = () => {
                             size="large"
                             style={{
                               fontFamily: 'Lato',
-                              fontWeight: 'bold',
                               fontSize: '14px',
                               width: '50%',
                               marginLeft: '10px',
@@ -524,7 +520,6 @@ const PaymentMethod = () => {
                     size="large"
                     style={{
                       fontFamily: 'Lato',
-                      fontWeight: 'bold',
                       fontSize: '14px',
                       width: '100%',
                       marginRight: '18px',

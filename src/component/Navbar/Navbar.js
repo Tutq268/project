@@ -3,6 +3,7 @@ import './Navbar.css';
 import { NavLink, Redirect } from 'react-router-dom';
 import { Modal, Button } from 'antd';
 import { modalData, modalData2 } from './data';
+import Vector from './../../asset/image/Vector.png'
 
 const Navbar = ({ sticky }) => {
   const token = localStorage.getItem('tokenWeb');
@@ -11,6 +12,9 @@ const Navbar = ({ sticky }) => {
   const [isModalLogin, setIsModalLogin] = useState(false);
   const [clickSearch, setClickSearch] = useState(false);
   const [isCheckout, setIsCheckout] = useState(false);
+  const [heartIcon,setHeartIcon] = useState("./image/Home/heart-1.png")
+  const [userIcon,setUserIcon] = useState("./image/Home/Vector.png")
+  const [bagIcon,setBagIcon] = useState(Vector)
   const handleOk = () => {
     setIsModalVisible(false);
     setIsModaWishList(false);
@@ -104,13 +108,13 @@ const Navbar = ({ sticky }) => {
                 />
               </div>
             </li>
-            <li className="nav-item active menu-left">
+            <li className="nav-item active menu-left" onMouseEnter={() => setUserIcon("./image/Home/blackPerson.png")} onMouseLeave={() => setUserIcon("./image/Home/Vector.png")}>
               <NavLink to={token ? '/profile' : '/login'}>
                 <img
                   src={
                     token
                       ? './image/Product/productAvt.png'
-                      : './image/Home/blackPerson.png'
+                      : userIcon
                   }
                   alt="aphro"
                   style={{ width: '23px', height: '23px' }}
@@ -125,10 +129,12 @@ const Navbar = ({ sticky }) => {
                 setIsModalLogin(false);
               }}
               style={{ cursor: 'pointer' }}
+              onMouseEnter = {() => setHeartIcon("./image/Home/blackHeart.png")}
+              onMouseLeave={() => setHeartIcon("./image/Home/heart-1.png")}
             >
               <img
-                src="./image/Home/blackHeart.png"
-                alt="vector"
+                src={heartIcon}
+                alt="heart"
                 style={{ width: '23px', height: '23px' }}
               />
             </li>
@@ -140,10 +146,12 @@ const Navbar = ({ sticky }) => {
                 setIsModalLogin(false);
               }}
               style={{ cursor: 'pointer' }}
+              onMouseEnter = {() => setBagIcon("./image/Home/blackBag.png")}
+              onMouseLeave ={() => setBagIcon(Vector)}
             >
               <img
-                src="./image/Home/blackBag.png"
-                alt="vector 2"
+                src={bagIcon}
+                alt="white"
                 style={{ width: '23px', height: '23px' }}
               />
             </li>
@@ -164,7 +172,7 @@ const Navbar = ({ sticky }) => {
             flexDirection: 'column',
           }}
         >
-          <div style={{ padding: '15px 35px', borderBottom: 'solid 1px #ccc' }}>
+          <div style={{  padding: '32px 35px 60px 35px', borderBottom: 'solid 1px #ccc' }}>
             {modalData.map((value, index) => {
               return (
                 <div
@@ -287,29 +295,18 @@ const Navbar = ({ sticky }) => {
               shipping & taxes will be calculated at check out
             </p>
             <div style={{ marginTop: '30px' }}>
-              <Button
+              <NavLink to="/shipping-information"
                 className="button-main"
                 style={{
                   width: '100%',
                   size: 'large',
                   height: '50px',
                   fontFamily: 'Lato',
-                }}
-                onClick={() => {
-                  if (token) {
-                    setIsCheckout(true);
-                    setIsModaWishList(false);
-                    setIsModalVisible(false);
-                    setIsModalLogin(false);
-                  } else {
-                    setIsModaWishList(false);
-                    setIsModalVisible(false);
-                    setIsModalLogin(true);
-                  }
+                  
                 }}
               >
-                Submit
-              </Button>
+                Checkout
+              </NavLink>
             </div>
             
           </div>
@@ -330,7 +327,7 @@ const Navbar = ({ sticky }) => {
             flexDirection: 'column',
           }}
         >
-          <div style={{ padding: '15px 35px', borderBottom: 'solid 1px #ccc' }}>
+          <div style={{ padding: '32px 35px 60px 35px', borderBottom: 'solid 1px #ccc' }}>
             {modalData2.map((value, index) => {
               return (
                 <div
@@ -466,6 +463,10 @@ const Navbar = ({ sticky }) => {
                   size: 'large',
                   height: '50px',
                 }}
+                onClick={() =>{
+                  setIsModaWishList(false)
+                  setIsModalVisible(true)
+                }}
               >
                 Add selected items to shopping cart
               </Button>
@@ -478,6 +479,10 @@ const Navbar = ({ sticky }) => {
                   fontFamily: 'Lato',
                   size: 'large',
                   height: '50px',
+                }}
+                onClick={() =>{
+                  setIsModaWishList(false)
+                  setIsModalVisible(true)
                 }}
               >
                 Add all items to shopping cart
