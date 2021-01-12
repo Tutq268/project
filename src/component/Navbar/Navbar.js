@@ -58,23 +58,23 @@ const Navbar = ({ sticky }) => {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <NavLink to="/store" style={{ color: 'black' }}>
+              <NavLink to="/store" style={{ color: 'black',fontFamily:'Playfair Display' }}>
                 Shop
               </NavLink>
             </li>
             <li className="nav-item active">
-              <NavLink to="/kits" style={{ color: 'black' }}>
+              <NavLink to="/kits" style={{ color: 'black',fontFamily:'Playfair Display' }}>
                 Kits
               </NavLink>
             </li>
 
             <li className="nav-item active">
-              <NavLink to="/about" style={{ color: 'black' }}>
+              <NavLink to="/about" style={{ color: 'black',fontFamily:'Playfair Display' }}>
                 About
               </NavLink>
             </li>
             <li className="nav-item active">
-              <NavLink to="/contact" style={{ color: 'black' }}>
+              <NavLink to="/contact" style={{ color: 'black',fontFamily:'Playfair Display' }}>
                 Contact
               </NavLink>
             </li>
