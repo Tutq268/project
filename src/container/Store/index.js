@@ -100,7 +100,7 @@ const Store = () => {
             <Row>
               {product.map((value, index) => {
                 return (
-                  <Col xl={6} lg={12} md={12} sm={12} xs={24}>
+                  <Col key={index} xl={6} lg={12} md={12} sm={12} xs={24}>
                     <NavLink
                       to="/product-detail"
                       style={{

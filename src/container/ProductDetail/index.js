@@ -75,7 +75,7 @@ const ProductDetail = () => {
                   </div>
                   <div
                     style={{
-                      width: '100%',
+                      width: '550px',
                       borderTop: 'solid 1px black',
                       borderBottom: 'solid 1px black',
                       marginTop: '20px',
@@ -214,7 +214,7 @@ const ProductDetail = () => {
                           fontFamily:'Lato'
                         }}
                       >
-                        wishto card
+                        add to card
                       </span>
                     </div>
                   </div>

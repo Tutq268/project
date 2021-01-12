@@ -84,7 +84,7 @@ const Home = () => {
             <Row>
               {aphorodite.map((value, index) => {
                 return (
-                  <Col xl={6} lg={12} md={12} sm={12} xs={24}>
+                  <Col xl={6} key={index} lg={12} md={12} sm={12} xs={24}>
                     <NavLink
                     to="/product-detail"
                       style={{
@@ -159,27 +159,24 @@ const Home = () => {
                 alignItems: 'center',
               }}
             >
-            <div
+            <NavLink to="/store"
+              className="button-main"
               style={{
                 marginTop: '50px',
                 width: '236px',
                 height:'50px',
-                backgroundColor: '#FF9592',
-                display: 'flex',
-                justifyContent: 'center',
-                alignItems: 'center',
               }}
             >
               <span
                 style={{
                   fontWeight: '700',
                   fontSize: '14px',
-                  color: '#000',
+                  fontFamily:'Lato',
                 }}
               >
-                   VIEW DETAILS
+                   VIEW ALL PRODUCT
               </span>
-            </div>
+            </NavLink>
 
             </div>
           </div>
@@ -310,7 +307,7 @@ const Home = () => {
                 alignItems: 'center',
               }}
             >
-              <div
+              <NavLink to="/kits"
                className="button-main"
                 style={{
                   marginTop: '50px',
@@ -327,7 +324,7 @@ const Home = () => {
                 >
                   VIEW DETAILS
                 </span>
-              </div>
+              </NavLink>
             </div>
           </div>
           <div
