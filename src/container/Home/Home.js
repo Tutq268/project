@@ -371,7 +371,7 @@ const Home = () => {
             >
               and update latest news about our Products
             </span>
-            <div
+            <NavLink to="/login"
              className="button-main"
               style={{
                 marginTop: '50px',
@@ -379,7 +379,7 @@ const Home = () => {
                 height: '50px',
               }}
             >
-              <NavLink to="/login"
+              <span
                 style={{
                   fontWeight: '700',
                   fontSize: '14px',
@@ -387,8 +387,8 @@ const Home = () => {
                 }}
               >
                 SIGN IN
-              </NavLink>
-            </div>
+              </span>
+            </NavLink>
           </div>
           <Footer />
         </section>
