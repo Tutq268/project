@@ -349,8 +349,8 @@ const PaymentMethod = () => {
                           alignItems:'center'
                         }}
                       >
-                         <NavLink
-                        to="/shipping-information">
+                         <a
+                        href="/shipping-information">
                         <span
                           style={{
                             fontWeight: '400',
@@ -360,9 +360,9 @@ const PaymentMethod = () => {
                         >
                           {'<'} Back to cart
                         </span>
-                        </NavLink>
-                        <NavLink
-                        to="/order-status"
+                        </a>
+                        <a
+                        href="/order-status"
                           className="button-main"
                           style={{
                             width: '142px',
@@ -379,7 +379,7 @@ const PaymentMethod = () => {
                           >
                             Paynow
                           </span>
-                        </NavLink>
+                        </a>
                       </div>
                     </div>
                   </div>

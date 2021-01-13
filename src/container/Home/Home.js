@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState } from 'react';
 import SwiperCore, {
   Navigation,
   Pagination,
@@ -18,7 +18,7 @@ import 'swiper/components/scrollbar/scrollbar.scss';
 import { Col, Row, Rate } from 'antd';
 // import Footer from "./../../component/Footer/Footer"
 import Footer from './../../component/Footer/Footer';
-import { NavLink,useLocation } from 'react-router-dom';
+import { NavLink, useLocation } from 'react-router-dom';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -30,19 +30,20 @@ const Home = () => {
   const location = useLocation();
   SwiperCore.use([Autoplay]);
 
-  
   return (
     <div>
-      <Navbar sticky={isSticky} openCard={location.props}/>
+      <Navbar sticky={isSticky} openCard={location.props} />
       <main style={{ backgroundColor: '#FAFAFA' }}>
         <section className="welcome">
           <div ref={element} className="mainStyle">
-            <Swiper autoplay={{ delay: 5000 }}  pagination={{ clickable: true }}>
+            <Swiper
+              autoplay={{ delay: 5000 }}
+              pagination={{ clickable: true }}
+  
+            >
               {backGroundMain.map((value, index) => {
                 return (
-                  <SwiperSlide
-                    key={index}
-                  >
+                  <SwiperSlide key={index}>
                     <div
                       style={{
                         height: '570px',
@@ -80,12 +81,12 @@ const Home = () => {
               Be Aphrodite Everyday
             </span>
             <span
-             className="fontLato"
+              className="fontLato"
               style={{
                 fontWeight: '300',
                 fontSize: '18px',
                 fontFamily: 'lato',
-                color:'#565556'
+                color: '#565556',
               }}
             >
               Show the world the true beauty of a true goddess{' '}
@@ -108,7 +109,7 @@ const Home = () => {
                       }}
                     >
                       <div
-                      className="productStyle"
+                        className="productStyle"
                         style={{
                           width: '294px',
                           height: '382px',
@@ -161,7 +162,14 @@ const Home = () => {
                         defaultValue={5}
                         style={{ color: '#FF9592', fontSize: '15px' }}
                       />
-                      <p style={{ fontWeight: '700', fontFamily: 'Playfair Display' }}>{value.price}</p>
+                      <p
+                        style={{
+                          fontWeight: '700',
+                          fontFamily: 'Playfair Display',
+                        }}
+                      >
+                        {value.price}
+                      </p>
                     </NavLink>
                   </Col>
                 );
@@ -195,7 +203,7 @@ const Home = () => {
               </NavLink>
             </div>
           </div>
-          <div>
+          <div style={{ marginTop: '160px' }}>
             <Row>
               <Col xl={14} lg={14} md={14} sm={24} xs={24}>
                 <img
@@ -221,6 +229,7 @@ const Home = () => {
                         fontWeight: '700',
                         color: '#F59393',
                         fontFamily: 'Playfair Display',
+                        lineHeight: '110px',
                       }}
                     >
                       Classic Beauty
@@ -233,22 +242,23 @@ const Home = () => {
                       fontWeight: '400',
                       lineHeight: '27px',
                       fontSize: '14px',
+                      marginTop: '70px',
                     }}
                   >
-                    <p style={{ margin: '0',color:'#565556' }}>
+                    <p style={{ margin: '0', color: '#565556' }}>
                       You’re never just doing or thinking about one thing, and
                       neither should your skincare.Each one of our products are
                       easy-to-use hybrids that make your skin look naturally
                       glowing and lit-from-within
                     </p>
-                    <p style={{ marginTop: '27px',color: '#565556' }}>
+                    <p style={{ marginTop: '27px', color: '#565556' }}>
                       We only formulate with the highest quality natural
                       ingredients, and believe what’s not in the formula is just
                       as important as what is. Our skincare essentials are
                       clean, cruelty-free and free of parabens, sulfates, and
                       phthalates, among others. Get to know more about us
                     </p>
-                    <p style={{ marginTop: '27px',color:'#565556' }}>
+                    <p style={{ marginTop: '27px', color: '#565556' }}>
                       Our skincare essentials are clean, cruelty-free and free
                       of parabens, sulfates, and phthalates, among others.
                     </p>
@@ -287,12 +297,12 @@ const Home = () => {
               Discover the Aphro’s Kits
             </span>
             <span
-             className="fontLato"
+              className="fontLato"
               style={{
                 fontWeight: '300',
                 fontSize: '18px',
                 fontFamily: 'lato',
-                color: '#565556'
+                color: '#565556',
               }}
             >
               Be a real Aphrodite with the selective products by APHRO
@@ -306,18 +316,29 @@ const Home = () => {
           >
             <Row>
               <Col xl={12} lg={12} md={12} sm={24} xs={24}>
-                <img
-                  style={{ width: '100%', height: 'auto' }}
-                  src="./image/Home/Discover1.png"
-                  alt="discover 1"
-                />
+                <div style={{ width: '100%' }} className="hoverImage">
+                  <img
+                    style={{ width: '100%', height: 'auto' }}
+                    src="./image/Home/Discover1.png"
+                    alt="discover 1"
+                  />
+                </div>
               </Col>
               <Col xl={12} lg={12} md={12} sm={24} xs={24}>
-                <img
-                  style={{ width: '100%', height: 'auto' }}
-                  src="./image/Home/Discover2.png"
-                  alt="discover 2"
-                />
+                <div
+                  style={{ width: '100%', display: 'inline-block' }}
+                  className="hoverImage"
+                >
+                  <img
+                    style={{
+                      width: '100%',
+                      height: 'auto',
+                      display: 'inline-block',
+                    }}
+                    src="./image/Home/Discover2.png"
+                    alt="discover 2"
+                  />
+                </div>
               </Col>
             </Row>
             <div
@@ -366,30 +387,30 @@ const Home = () => {
               #BEAPHRO
             </span>
             <span
-             className="fontLato"
+              className="fontLato"
               style={{
                 fontSize: '18px',
                 fontWeight: '300',
                 fontFamily: 'Lato',
-                color: '#565556'
+                color: '#565556',
               }}
             >
               ship Join the APHRO’s Community to share your Reviews and
               Experience
             </span>
             <span
-             className="fontLato"
+              className="fontLato"
               style={{
                 fontSize: '18px',
                 fontWeight: '300',
                 fontFamily: 'Lato',
-                color: '#565556'
+                color: '#565556',
               }}
             >
               and update latest news about our Products
             </span>
-            <NavLink
-              to="/login"
+            <a
+              href="/login"
               className="button-main"
               style={{
                 marginTop: '50px',
@@ -406,7 +427,7 @@ const Home = () => {
               >
                 SIGN IN
               </span>
-            </NavLink>
+            </a>
           </div>
           <Footer />
         </section>

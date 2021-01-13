@@ -21,53 +21,53 @@ const Footer = () => {
               alt="logo main"
             />
             <div style={{ display: 'flex', flexDirection: 'row' }}>
-            <NavLink to="/"
+            <a href="/"
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',fontFamily:'Lato' }}
               >
                 Home
-              </NavLink>
+              </a>
               <p
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',marginRight:'3px',marginLeft:'3px',fontFamily:'Lato' }}
               >
                 |{' '}
               </p>
-              <NavLink to="/store"
+              <a href="/store"
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',fontFamily:'Lato' }}
               >
                 Shop
-              </NavLink>
+              </a>
               <p
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',marginRight:'3px',marginLeft:'3px',fontFamily:'Lato' }}
               >
                 |{' '}
               </p>
-             <NavLink to="/kits"
+             <a href="/kits"
 
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',fontFamily:'Lato' }}
               >
                 Kits
-              </NavLink>
+              </a>
               <p
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',marginRight:'3px',marginLeft:'3px',fontFamily:'Lato' }}
               >
                 |{' '}
               </p>
-              <NavLink to="/about"
+              <a href="/about"
 
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',fontFamily:'Lato' }}
               >
                 About
-              </NavLink>
+              </a>
               <p
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',marginRight:'3px',marginLeft:'3px',fontFamily:'Lato' }}
               >
                 |{' '}
               </p>
-              <NavLink to="/policy"
+              <a href="/policy"
                 style={{ color: 'white', fontWeight: 'bold', fontSize: '14px',fontFamily:'Lato' }}
               >
                 Shipping policy
-              </NavLink>
+              </a>
             </div>
             <p
             className="fontLato"

@@ -177,7 +177,7 @@ const About = () => {
                     width: '100%',
                   }}
                 >
-                  <div style={{ position: 'relative', marginRight: '122px' }}>
+                  <div style={{ position: 'relative', marginRight: '222px' }}>
                     <img
                       src="./image/about/about3.png"
                       style={{ height: '254px', width: '561px' }}
@@ -218,7 +218,7 @@ const About = () => {
                     />
                   </div>
 
-                  <div style={{ display: 'flex', flexDirection: 'column' }}>
+                  <div style={{ display: 'flex', flexDirection: 'column',width:'353px' }}>
                     <p style={{ fontSize: '36px', fontWeight: '700',fontFamily:'Playfair Display' }}>
                       The Story Of Us
                     </p>
@@ -267,7 +267,7 @@ const About = () => {
                   >
                     For all enquiries, please contact us through contact page{' '}
                   </p>
-                  <NavLink to="/contact"
+                  <a href="/contact"
                     className="button-main"
                     style={{
                       marginTop: '50px',
@@ -283,7 +283,7 @@ const About = () => {
                     >
                       Contact us
                     </span>
-                  </NavLink>
+                  </a>
                 </div>
               </div>
             </div>

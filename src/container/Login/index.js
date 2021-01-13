@@ -47,12 +47,12 @@ const Login = () => {
                     suffix={suffix2}
                 />
                  <div style={{marginTop:'20px'}}>
-                    <NavLink to="/"  className="button-main"  style={{width: '440px',height:'50px'}} onClick={()=>{
+                    <a href="/"  className="button-main"  style={{width: '440px',height:'50px'}} onClick={()=>{
                       localStorage.setItem("tokenWeb","tokenWeb")
                     }}>
                        Submit
                         
-                    </NavLink>
+                    </a>
            
                     </div>
                     <div style={{marginTop:'20px',textAlign:'center'}}>

@@ -426,7 +426,7 @@ const Navbar = ({ sticky,openCard,isCloseCard }) => {
                     >
                       $ 34
                     </p>
-                    <div
+                    {/* <div
                       style={{
                         width: '138px',
                         height: '42px',
@@ -447,7 +447,7 @@ const Navbar = ({ sticky,openCard,isCloseCard }) => {
                       <span style={{ fontWeight: '700', fontSize: '14px' }}>
                         +
                       </span>
-                    </div>
+                    </div> */}
                   </div>
                   <div style={{ marginTop: '5px', marginLeft: '10px' }}>
                     {value.tick ? (
@@ -648,7 +648,7 @@ const Navbar = ({ sticky,openCard,isCloseCard }) => {
             </p>
           </div>
 
-          <NavLink to="/login" style={{ marginTop: '90px', width: '100%' }}>
+          <a href="/login" style={{ marginTop: '90px', width: '100%' }}>
             <Button
               style={{
                 width: '100%',
@@ -661,7 +661,7 @@ const Navbar = ({ sticky,openCard,isCloseCard }) => {
             >
               Login
             </Button>
-          </NavLink>
+          </a>
         </div>
       </Modal>
     </div>

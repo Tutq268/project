@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import useSticky from './../../component/hooks/useSticky.js';
 import Navbar from './../../component/Navbar/Navbar';
 import { Col, Row, Rate, Menu, Dropdown, Button, Input } from 'antd';
@@ -6,13 +6,14 @@ import Footer from './../../component/Footer/Footer';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/swiper.scss';
 import { review } from './data';
-import SwiperCore, { Pagination } from 'swiper';
+import SwiperCore, { Pagination,Navigation } from 'swiper';
 import { DownOutlined } from '@ant-design/icons';
 
-SwiperCore.use([Pagination]);
+SwiperCore.use([Pagination,Navigation]);
 
 const ProductDetail = () => {
-  const [image,setImage] = useState("./image/Home/heart-1.png")
+  const [image, setImage] = useState('./image/Home/heart-1.png');
+  const [colorText, setColorText] = useState('#565556');
   const { isSticky, element } = useSticky();
   const menu = (
     <Menu>
@@ -49,7 +50,11 @@ const ProductDetail = () => {
                     justifyContent: 'center',
                   }}
                 >
-                  <img src="./image/Product/product1.png" style={{width: '549px',height:'707px'}} alt="product 1" />
+                  <img
+                    src="./image/Product/product1.png"
+                    style={{ width: '549px', height: '707px' }}
+                    alt="product 1"
+                  />
                   <div
                     style={{
                       display: 'flex',
@@ -131,7 +136,13 @@ const ProductDetail = () => {
                     flexDirection: 'column',
                   }}
                 >
-                  <p style={{ fontWeight: '700', fontSize: '24px',fontFamily:'Playfair Display' }}>
+                  <p
+                    style={{
+                      fontWeight: '700',
+                      fontSize: '24px',
+                      fontFamily: 'Playfair Display',
+                    }}
+                  >
                     Pearly Goddess Gentle Make-up Remover
                   </p>
                   <p
@@ -172,7 +183,7 @@ const ProductDetail = () => {
                       fontWeight: '700',
                       fontSize: '24px',
                       marginTop: '30px',
-                      fontFamily: 'Playfair Display'
+                      fontFamily: 'Playfair Display',
                     }}
                   >
                     $9.80
@@ -201,21 +212,20 @@ const ProductDetail = () => {
                       </span>
                     </div>
                     <div
-                     className="button-main"
+                      className="button-main"
                       style={{
                         width: '195px',
                         height: '50px',
-                   
                       }}
                     >
                       <span
                         style={{
                           fontWeight: '700',
                           fontSize: '14px',
-                          fontFamily:'Lato'
+                          fontFamily: 'Lato',
                         }}
                       >
-                        add to cart
+                        Add to cart
                       </span>
                     </div>
                   </div>
@@ -262,15 +272,22 @@ const ProductDetail = () => {
                         alignItems: 'center',
                         cursor: 'pointer',
                       }}
-                      onMouseEnter={() => setImage("./image/Product/heartpink.png")} onMouseLeave={() => setImage("./image/Home/heart-1.png")}
+                      onMouseEnter={() => {
+                        setImage('./image/Product/heartpink.png');
+                        setColorText('#FF9592');
+                      }}
+                      onMouseLeave={() => {
+                        setImage('./image/Home/heart-1.png');
+                        setColorText('#565556');
+                      }}
                     >
-                      <img src={image}  alt="heart circle" />
+                      <img src={image} alt="heart circle" />
                       <span
-                      className="addWishlist"
                         style={{
                           fontWeight: '700',
                           fontSize: '14px',
                           marginLeft: '7px',
+                          color: colorText,
                         }}
                       >
                         Add to wishlist
@@ -360,13 +377,13 @@ const ProductDetail = () => {
                   fontSize: '36px',
                   marginBottom: '10px',
                   textAlign: 'center',
-                  fontFamily:'Playfair Display'
+                  fontFamily: 'Playfair Display',
                 }}
               >
                 Review from the Aphro’s Community
               </span>
               <span
-               className="fontLato"
+                className="fontLato"
                 style={{
                   fontWeight: '300',
                   fontSize: '18px',
@@ -382,15 +399,16 @@ const ProductDetail = () => {
           <div
             style={{
               marginTop: '50px',
-              padding: '0 80px',
+              padding: '0',
               marginBottom: '50px',
             }}
           >
             <Swiper
-              spaceBetween={50}
+              spaceBetween={80}
               slidesPerView={4}
               pagination={{ clickable: true }}
-              style={{ paddingBottom: '50px' }}
+              style={{ paddingBottom:'50px',paddingLeft:'80px',paddingRight:'80px' }}
+              navigation
             >
               {review.map((value, index) => {
                 return (
@@ -399,6 +417,7 @@ const ProductDetail = () => {
                       style={{
                         width: '100%',
                         padding: '5px',
+                        height:'359px'
                       }}
                     >
                       <div
@@ -515,131 +534,181 @@ const ProductDetail = () => {
 
           {/* <div style={{ margin: '80px 172px 0 172px',paddingBottom:'150px' }}> */}
           <div className="paddingScreen">
-              <div style={{paddingBottom : '150px'}}>
-            <Row>
-              <Col
-                xl={10}
-                lg={10}
-                md={10}
-                sm={24}
-                xs={24}
-                style={{ padding: '0 50px' }}
-              >
-                <div
-                  style={{
-                    padding: '0 15px',
-                    display: 'flex',
-                    flexDirection: 'column',
-                  }}
+            <div style={{ paddingBottom: '150px' }}>
+              <Row>
+                <Col
+                  xl={10}
+                  lg={10}
+                  md={10}
+                  sm={24}
+                  xs={24}
+                  style={{ padding: '0 50px' }}
                 >
-                  <p
+                  <div
                     style={{
-                      fontWeight: '700',
-                      marginBottom: '30px',
-                      fontSize: '24px',
-                      fontFamily:'Playfair Display'
+                      padding: '0 15px',
+                      display: 'flex',
+                      flexDirection: 'column',
                     }}
                   >
-                    You have tried this product?
-                  </p>
-                  <p>
-                    Please share with us your experience. Feel free to to give
-                    any useful tips for the Aphro’s Community We are always very
-                    grateful with your feedbacks.
-                  </p>
-                  <p>Start writing a Review with just a few simple steps</p>
-                  <div style={{ marginTop: '80px',display:'flex',alignItems:'flex-start',flexDirection:'column' }}>
-                    <img
-                      src="./image/Product/product5.png"
-                      style={{ width: '62px', height: '62px',marginLeft:'10px' }}
-                      alt="product 5"
-                    />
-                    <p style={{fontWeight:'700'}}>#BEAPHRO</p>
-                  </div>
-                </div>
-              </Col>
-              <Col
-                xl={14}
-                lg={14}
-                md={14}
-                sm={24}
-                xs={24}
-                style={{ padding: '0 50px' }}
-              >
-                <div
-                  style={{
-                    padding: '0 15px',
-                    display: 'flex',
-                    flexDirection: 'column',
-                  }}
-                >
-                  <div
-                    style={{ display: 'flex', flex: 1, flexDirection: 'row' }}
-                  >
-                    <Input
-                    className="fontLato"
-                      size="large"
-                      placeholder="Name"
-                      style={{ flex: 0.6,fontFamily:'Lato',fontWeight:'300',fontSize:'14px' }}
-                    />
-                    <Input
-                    className="fontLato"
-                      size="large"
-                      placeholder="Skin Type"
-                      style={{ flex: 0.3, marginLeft: '15px',fontFamily:'Lato',fontWeight:'300',fontSize:'14px' }}
-                    />
-                  </div>
-                  <div
-                    style={{ display: 'flex', flex: 1, flexDirection: 'row', marginTop:'15px'
-                }}
-                  >
-                    <Input
-                    className="fontLato"
-                      size="large"
-                      placeholder="Do I recommend this product"
-                      style={{ flex: 0.5,fontFamily:'Lato',fontWeight:'300',fontSize:'14px' }}
-                    />
-                    <div
+                    <p
                       style={{
-                        marginLeft: '15px',
-                        display: 'flex',
-                        flexDirection: 'row',
-                        alignItems:'center',
+                        fontWeight: '700',
+                        marginBottom: '30px',
+                        fontSize: '24px',
+                        fontFamily: 'Playfair Display',
                       }}
                     >
-                      <span style={{marginTop:'5px',color: '#565556',marginRight:'10px'}}>Rating </span>
-                      <Rate
-                        defaultValue={0}
-                        style={{ color: '#FF9592' }}
+                      You have tried this product?
+                    </p>
+                    <p>
+                      Please share with us your experience. Feel free to to give
+                      any useful tips for the Aphro’s Community We are always
+                      very grateful with your feedbacks.
+                    </p>
+                    <p>Start writing a Review with just a few simple steps</p>
+                    <div
+                      style={{
+                        marginTop: '80px',
+                        display: 'flex',
+                        alignItems: 'flex-start',
+                        flexDirection: 'column',
+                      }}
+                    >
+                      <img
+                        src="./image/Product/product5.png"
+                        style={{
+                          width: '62px',
+                          height: '62px',
+                          marginLeft: '10px',
+                        }}
+                        alt="product 5"
+                      />
+                      <p style={{ fontWeight: '700' }}>#BEAPHRO</p>
+                    </div>
+                  </div>
+                </Col>
+                <Col
+                  xl={14}
+                  lg={14}
+                  md={14}
+                  sm={24}
+                  xs={24}
+                  style={{ padding: '0 50px' }}
+                >
+                  <div
+                    style={{
+                      padding: '0 15px',
+                      display: 'flex',
+                      flexDirection: 'column',
+                    }}
+                  >
+                    <div
+                      style={{ display: 'flex', flex: 1, flexDirection: 'row' }}
+                    >
+                      <Input
+                        className="fontLato"
+                        size="large"
+                        placeholder="Name"
+                        style={{
+                          flex: 0.6,
+                          fontFamily: 'Lato',
+                          fontWeight: '300',
+                          fontSize: '14px',
+                        }}
+                      />
+                      <Input
+                        className="fontLato"
+                        size="large"
+                        placeholder="Skin Type"
+                        style={{
+                          flex: 0.3,
+                          marginLeft: '15px',
+                          fontFamily: 'Lato',
+                          fontWeight: '300',
+                          fontSize: '14px',
+                        }}
                       />
                     </div>
-                  </div>
-                  <div style={{marginTop:'15px'}}>
-                  <Input
+                    <div
+                      style={{
+                        display: 'flex',
+                        flex: 1,
+                        flexDirection: 'row',
+                        marginTop: '15px',
+                      }}
+                    >
+                      <Input
                         className="fontLato"
-                      size="large"
-                      placeholder="Title"
-                      style={{ flex: 0.4,fontFamily:'Lato',fontWeight:'300',fontSize:'14px' }}
-                    />
-
-                  </div>
-                  <div style={{marginTop:'15px'}}>
-                  <TextArea
-                      className="fontLato"
-                      rows={5}
-                      placeholder="Type your detail review here"
-                      style={{ flex: 0.4,fontFamily:'Lato',fontWeight:'300',fontSize:'14px' }}
-                    />
-
-                  </div>
-                  <div style={{marginTop:'15px'}}>
-                    <Button style={{width: '100%',backgroundColor:'#565556',color: '#fff',size:'large',height:'50px'}}>
-                        Submit
-                    </Button>
+                        size="large"
+                        placeholder="Do I recommend this product"
+                        style={{
+                          flex: 0.5,
+                          fontFamily: 'Lato',
+                          fontWeight: '300',
+                          fontSize: '14px',
+                        }}
+                      />
+                      <div
+                        style={{
+                          marginLeft: '15px',
+                          display: 'flex',
+                          flexDirection: 'row',
+                          alignItems: 'center',
+                        }}
+                      >
+                        <span
+                          style={{
+                            marginTop: '5px',
+                            color: '#565556',
+                            marginRight: '10px',
+                          }}
+                        >
+                          Rating{' '}
+                        </span>
+                        <Rate defaultValue={0} style={{ color: '#FF9592' }} />
+                      </div>
                     </div>
-                </div>
-              </Col>
-            </Row>
+                    <div style={{ marginTop: '15px' }}>
+                      <Input
+                        className="fontLato"
+                        size="large"
+                        placeholder="Title"
+                        style={{
+                          flex: 0.4,
+                          fontFamily: 'Lato',
+                          fontWeight: '300',
+                          fontSize: '14px',
+                        }}
+                      />
+                    </div>
+                    <div style={{ marginTop: '15px' }}>
+                      <TextArea
+                        className="fontLato"
+                        rows={5}
+                        placeholder="Type your detail review here"
+                        style={{
+                          flex: 0.4,
+                          fontFamily: 'Lato',
+                          fontWeight: '300',
+                          fontSize: '14px',
+                        }}
+                      />
+                    </div>
+                    <div style={{ marginTop: '15px' }}>
+                      <Button
+                      className="button-main"
+                        style={{
+                          width: '100%',
+                          height: '50px',
+                        }}
+                      >
+                        Submit
+                      </Button>
+                    </div>
+                  </div>
+                </Col>
+              </Row>
             </div>
           </div>
         </section>

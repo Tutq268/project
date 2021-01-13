@@ -36,7 +36,13 @@ const Store = () => {
         <span style={{}}>Categories</span>
       </Menu.Item>
       <Menu.Item key="1">
-        <span>Categories 2</span>
+        <span>Cleanser</span>
+      </Menu.Item>
+      <Menu.Item key="2">
+        <span>Remover</span>
+      </Menu.Item>
+      <Menu.Item key="3">
+        <span>Cl</span>
       </Menu.Item>
     </Menu>
   );

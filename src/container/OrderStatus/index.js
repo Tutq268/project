@@ -95,7 +95,7 @@ const OrderStatus = () => {
               <img
                 src="./image/shipping/tickShip.png"
                 alt="tick ship"
-                style={{ width: '150px', height: '150px' }}
+                style={{ width: '150px', height: '150px',marginTop:'93px' }}
               />
               <p
                 style={{
@@ -326,9 +326,9 @@ const OrderStatus = () => {
                     
                   }}
                 >
-                    Need help? <span style={{color: '#FF9592',textDecoration:'underline'}}>Contact us</span>
+                    Need help? <a href="/contact" style={{color: '#FF9592',textDecoration:'underline'}}>Contact us</a>
                 </span>
-                <NavLink to="/"
+                <a href="/"
                   className="button-main"
                   style={{
                     width: '300px',
@@ -344,7 +344,7 @@ const OrderStatus = () => {
                   >
                    Continue shopping
                   </span>
-                </NavLink>
+                </a>
               </div>
             </div>
           </div>

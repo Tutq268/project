@@ -38,19 +38,19 @@ export const dataShip = [
       {
           id: 0,
           order: 'Order status',
-          status: 'order placed',
+          status: 'Order placed',
           time: '15:21PM 12/29/2020'
       },
       {
         id: 1,
         order: '',
-        status: 'confirmed',
+        status: 'Confirmed',
         time: '15:30PM 12/29/2020'
     },
     {
         id: 2,
         order: '',
-        status: 'prepared and ready to delivery',
+        status: 'Prepared and ready to delivery',
         time: '20:19PM 12/29/2020'
     },
   ]

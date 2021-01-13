@@ -24,7 +24,7 @@ const Policy = () =>{
                 alignItems: 'center',
               }}
             >
-                    <p style={{fontWeight:'bold',fontSize:'36px',marginBottom: '80px'}}>Shipping Policy</p>
+                    <p style={{fontWeight:'bold',fontSize:'36px',marginBottom: '80px', fontFamily: 'Playfair Display'}}>Shipping Policy</p>
                     <div style={{width: '100%',display:'flex',flexDirection: 'column',justifyContent:'flex-start'}}>
                             <p style={{fontWeight:'bold',fontFamily:'Lato'}}>Domestic Shipping Rates</p>
                             <p style={{fontWeight:'400',fontFamily:'Lato',marginBottom:'36px'}}>All domestic shipments are delivered through Viettelpost. There might be a difference in the shipping fee due to your specific location. Shipping rates will be automatically calculated in the Payment section. This calculation is 100% based on the shipping company’s policies. Please notice that Aphro doesn’t receive any interest from the shipping progress.</p>
@@ -39,9 +39,9 @@ const Policy = () =>{
                             <p style={{fontWeight:'400',fontFamily:'Lato'}}>Any Kits are final sale and ineligible for return.</p>
                             <p style={{fontWeight:'400',fontFamily:'Lato'}}>We do not accept returns or exchanges on international orders and shipments.</p>
                             <div style={{marginTop:'52px'}}>
-                    <Button style={{width: '100%',height:'50px',fontFamily:'Lato'}}  className="button-main">
+                    <a href="/" style={{width: '100%',height:'50px',fontFamily:'Lato'}}  className="button-main">
                     I understand & want to continue
-                    </Button>
+                    </a>
                     </div>
                     </div>
                 </div>

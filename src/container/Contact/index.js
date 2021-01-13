@@ -42,7 +42,7 @@ const Contact = () => {
                 style={{
                   fontWeight: '700',
                   fontSize: '48px',
-                  marginBottom: '36px',
+                  marginBottom: '15px',
                   fontFamily:'Playfair Display'
                 }}
               >
@@ -50,6 +50,7 @@ const Contact = () => {
               </p>
               <p
                 style={{
+                  fontFamily:'Lato',
                   fontWeight: '400',
                   fontSize: '24px',
                   marginBottom: '37px',

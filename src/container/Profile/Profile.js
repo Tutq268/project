@@ -56,9 +56,9 @@ const Profile = () => {
       render: (item) => {
         return (
           <div style={{ minWidth: '25em' }}>
-            <NavLink to="/order-status">
+            <a href="/order-status">
               <p style={{ color: '#000',fontWeight:'400' }}>{item}</p>
-            </NavLink>
+            </a>
           </div>
         );
       },
@@ -237,7 +237,7 @@ const Profile = () => {
             >
               <p>
                 Need help?{' '}
-                <NavLink to="/contact"
+                <a href="/contact"
                   style={{
                     textDecoration: 'underline',
                     color: '#FF9592',
@@ -245,9 +245,9 @@ const Profile = () => {
                   }}
                 >
                   Contact us
-                </NavLink>
+                </a>
               </p>
-              <NavLink to="/"
+              <a href="/"
                 className="button-main"
                 style={{
                   width: '236px',
@@ -262,7 +262,7 @@ const Profile = () => {
                 >
                   Continue shopping
                 </span>
-              </NavLink>
+              </a>
             </div>
           </div>
         </section>
