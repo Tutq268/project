@@ -16,7 +16,7 @@ const OrderStatus = () => {
           render: (item) => {
             return (
               <div>
-                <p style={{ fontWeight: '400', fontFamily: 'Lato' }}>{item}</p>
+                <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato',color:'#565556' }}>{item}</p>
               </div>
             );
           },
@@ -40,7 +40,7 @@ const OrderStatus = () => {
           render: (item) => {
             return (
               <div>
-                <p style={{ fontWeight: '400', fontFamily: 'Lato' }}>{item}</p>
+                <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato',color:'#565556' }}>{item}</p>
               </div>
             );
           },
@@ -66,7 +66,8 @@ const OrderStatus = () => {
                 style={{
                   fontWeight: '300',
                   fontFamily: 'Lato',
-                  textAlign: 'right'
+                  textAlign: 'right',
+                  color:'#565556'
                 }}
               >
                 {item}
@@ -128,6 +129,7 @@ const OrderStatus = () => {
                     fontFamily: 'Lato',
                     fontWeight: '300',
                     marginBottom: '0',
+                    color:'#565556'
                   }}
                 >
                   {' '}

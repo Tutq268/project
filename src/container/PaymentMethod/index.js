@@ -181,7 +181,7 @@ const PaymentMethod = () => {
                               marginLeft: '16px',
                             }}
                           >
-                            Credit card
+                            Credit cart
                           </span>
                         </div>
                         <div style={{ marginTop: '16px' }}>
@@ -349,6 +349,8 @@ const PaymentMethod = () => {
                           alignItems:'center'
                         }}
                       >
+                         <NavLink
+                        to="/shipping-information">
                         <span
                           style={{
                             fontWeight: '400',
@@ -356,8 +358,9 @@ const PaymentMethod = () => {
                             color: '#FF9592',
                           }}
                         >
-                          {'<'} Back to card
+                          {'<'} Back to cart
                         </span>
+                        </NavLink>
                         <NavLink
                         to="/order-status"
                           className="button-main"
@@ -374,7 +377,7 @@ const PaymentMethod = () => {
                               fontFamily:'Lato'
                             }}
                           >
-                            Paynơw
+                            Paynow
                           </span>
                         </NavLink>
                       </div>
@@ -396,17 +399,18 @@ const PaymentMethod = () => {
                         fontWeight: '300',
                         fontFamily: 'Lato',
                         marginRight: '80px',
+                        color:'#565556'
                       }}
                     >
                       © 2020 APHRO Vietnam, Inc. All rig hts reserved.{' '}
                     </p>
-                    <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>
+                    <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato',color:'#565556' }}>
                       Privacy Policy
                     </p>
-                    <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>
+                    <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato',color:'#565556' }}>
                       Terms of Use
                     </p>
-                    <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>
+                    <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato',color:'#565556' }}>
                       Refund Policy
                     </p>
                   </div>

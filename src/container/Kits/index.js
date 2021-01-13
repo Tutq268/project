@@ -199,9 +199,10 @@ const Kits = () => {
             >
               <span
                 style={{
-                  fontWeight: 'bold',
+                  fontWeight: '700',
                   fontSize: '24px',
                   position: 'relative',
+                  fontFamily: 'Playfair Display'
                 }}
               >
                 100$
@@ -213,6 +214,7 @@ const Kits = () => {
                     position: 'absolute',
                     bottom: '15px',
                     marginLeft: '15px',
+                    fontFamily: 'Playfair Display'
                   }}
                 >
                   136$
@@ -342,9 +344,10 @@ const Kits = () => {
             >
               <span
                 style={{
-                  fontWeight: 'bold',
+                  fontWeight: '700',
                   fontSize: '24px',
                   position: 'relative',
+                  fontFamily: 'Playfair Display'
                 }}
               >
                 100$
@@ -356,6 +359,7 @@ const Kits = () => {
                     position: 'absolute',
                     bottom: '15px',
                     marginLeft: '15px',
+                    fontFamily: 'Playfair Display'
                   }}
                 >
                   136$

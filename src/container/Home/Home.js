@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import SwiperCore, {
   Navigation,
   Pagination,
@@ -18,7 +18,7 @@ import 'swiper/components/scrollbar/scrollbar.scss';
 import { Col, Row, Rate } from 'antd';
 // import Footer from "./../../component/Footer/Footer"
 import Footer from './../../component/Footer/Footer';
-import { NavLink } from 'react-router-dom';
+import { NavLink,useLocation } from 'react-router-dom';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
@@ -27,10 +27,13 @@ const Home = () => {
   const roundHeart = './image/Home/heart-1.png';
   const { isSticky, element } = useSticky();
   const [heartUrl, setHeartUrl] = useState(-1);
+  const location = useLocation();
   SwiperCore.use([Autoplay]);
+
+  
   return (
     <div>
-      <Navbar sticky={isSticky} />
+      <Navbar sticky={isSticky} openCard={location.props}/>
       <main style={{ backgroundColor: '#FAFAFA' }}>
         <section className="welcome">
           <div ref={element} className="mainStyle">
@@ -82,6 +85,7 @@ const Home = () => {
                 fontWeight: '300',
                 fontSize: '18px',
                 fontFamily: 'lato',
+                color:'#565556'
               }}
             >
               Show the world the true beauty of a true goddess{' '}
@@ -156,7 +160,7 @@ const Home = () => {
                         defaultValue={5}
                         style={{ color: '#FF9592', fontSize: '15px' }}
                       />
-                      <p style={{ fontWeight: 'bold' }}>{value.price}</p>
+                      <p style={{ fontWeight: '700', fontFamily: 'Playfair Display' }}>{value.price}</p>
                     </NavLink>
                   </Col>
                 );
@@ -230,20 +234,20 @@ const Home = () => {
                       fontSize: '14px',
                     }}
                   >
-                    <p style={{ margin: '0' }}>
+                    <p style={{ margin: '0',color:'#565556' }}>
                       You’re never just doing or thinking about one thing, and
                       neither should your skincare.Each one of our products are
                       easy-to-use hybrids that make your skin look naturally
                       glowing and lit-from-within
                     </p>
-                    <p style={{ marginTop: '27px' }}>
+                    <p style={{ marginTop: '27px',color: '#565556' }}>
                       We only formulate with the highest quality natural
                       ingredients, and believe what’s not in the formula is just
                       as important as what is. Our skincare essentials are
                       clean, cruelty-free and free of parabens, sulfates, and
                       phthalates, among others. Get to know more about us
                     </p>
-                    <p style={{ marginTop: '27px' }}>
+                    <p style={{ marginTop: '27px',color:'#565556' }}>
                       Our skincare essentials are clean, cruelty-free and free
                       of parabens, sulfates, and phthalates, among others.
                     </p>
@@ -287,6 +291,7 @@ const Home = () => {
                 fontWeight: '300',
                 fontSize: '18px',
                 fontFamily: 'lato',
+                color: '#565556'
               }}
             >
               Be a real Aphrodite with the selective products by APHRO
@@ -365,6 +370,7 @@ const Home = () => {
                 fontSize: '18px',
                 fontWeight: '300',
                 fontFamily: 'Lato',
+                color: '#565556'
               }}
             >
               ship Join the APHRO’s Community to share your Reviews and
@@ -376,6 +382,7 @@ const Home = () => {
                 fontSize: '18px',
                 fontWeight: '300',
                 fontFamily: 'Lato',
+                color: '#565556'
               }}
             >
               and update latest news about our Products

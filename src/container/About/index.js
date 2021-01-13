@@ -54,6 +54,7 @@ const About = () => {
                     fontWeight: '400',
                     fontFamily: 'Lato',
                     fontSize: '24px',
+                    color: '#333333'
                   }}
                 >
                   Be like Aphrodite
@@ -261,6 +262,7 @@ const About = () => {
                       fontWeight: '300',
                       fontSize: '18px',
                       marginBottom: '27px',
+                      color: '#565556'
                     }}
                   >
                     For all enquiries, please contact us through contact page{' '}

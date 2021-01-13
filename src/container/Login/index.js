@@ -47,28 +47,27 @@ const Login = () => {
                     suffix={suffix2}
                 />
                  <div style={{marginTop:'20px'}}>
-                    <Button style={{width: '440px',backgroundColor:'#FF9592',size:'large',height:'50px',fontWeight:'bold',color: 'black'}} onClick={()=>{
+                    <NavLink to="/"  className="button-main"  style={{width: '440px',height:'50px'}} onClick={()=>{
                       localStorage.setItem("tokenWeb","tokenWeb")
                     }}>
-                       <NavLink to="/">
                        Submit
-                       </NavLink>
                         
-                    </Button>
+                    </NavLink>
+           
                     </div>
                     <div style={{marginTop:'20px',textAlign:'center'}}>
-                        <p style={{textDecoration:"underline",fontWeight:'400'}}>Forgot password?</p>
+                        <p style={{textDecoration:"underline",fontWeight:'400',color:'#565556'}}>Forgot password?</p>
                     </div>
                     <div style={{marginTop:'20px',width:'440px'}}>
                         <hr></hr>
                     </div>
                     <div style={{marginTop:'20px'}}>
-                    <Button style={{width: '231px',backgroundColor:'#FF9592',size:'large',height:'50px',fontWeight:'bold'}}>
+                    <Button className="button-main" style={{width: '231px',height:'50px'}}>
                       Sign Up
                     </Button>
                     </div>
                     <div style={{marginTop:'20px',textAlign:'center'}}>
-                        <p style={{fontWeight:'400',fontSize:'12px'}}>or continue with</p>
+                        <p style={{fontWeight:'400',fontSize:'12px',color:'#565556'}}>or continue with</p>
                     </div>
                     <div style={{marginTop:'20px',textAlign:'center',display:'flex',flexDirection:'row',paddingBottom:'150px'}}>
                         <img alt="facebook" src="./image/login/fbLogin.png" style={{width:'26px',height:'26px',marginRight: '10px'}} />

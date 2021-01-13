@@ -1,16 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import SwiperCore, {
-  Navigation,
-  Pagination,
-  Scrollbar,
-  A11y,
   Autoplay,
 } from 'swiper';
 
 import useSticky from './../../component/hooks/useSticky.js';
 import Navbar from './../../component/Navbar/Navbar';
 import { dataShip } from './data';
-import { Col, Row, Rate, Input } from 'antd';
+import { Col, Row, Input } from 'antd';
 // import Footer from "./../../component/Footer/Footer"
 import Footer from './../../component/Footer/Footer';
 import { UserOutlined, DownOutlined } from '@ant-design/icons';
@@ -18,6 +14,7 @@ import { NavLink } from 'react-router-dom';
 
 const ShippingInfo = () => {
   const { isSticky, element } = useSticky();
+  const [isOpen,setIsOpen] = useState(true)
   SwiperCore.use([Autoplay]);
   const suffix = (
     <UserOutlined
@@ -36,9 +33,10 @@ const ShippingInfo = () => {
       }}
     />
   );
+
   return (
     <div>
-      <Navbar sticky={isSticky} />
+      <Navbar sticky={isSticky} isCloseCard={() => setIsOpen(false)} />
       <main style={{ backgroundColor: '#FAFAFA' }}>
         <section className="welcome">
           <div ref={element} style={{ padding: ' 0 70px 70px 70px' }}>
@@ -196,7 +194,7 @@ const ShippingInfo = () => {
                       style={{
                         display: 'flex',
                         flexDirection: 'row',
-                        display: 'flex',
+                 
                         justifyContent: 'space-between',
                       }}
                     >
@@ -361,15 +359,20 @@ const ShippingInfo = () => {
                           flexDirection: 'row',
                           justifyContent: 'space-between',
                           alignItems:'center' }}>
-                        <span
-                          style={{
-                            fontWeight: '400',
-                            fontFamily: 'Lato',
-                            color: '#FF9592',
-                          }}
-                        >
-                          {'<'} Back to cart
+                            <NavLink to={{pathname: "/",props: isOpen}}>
+                            <span
+                            // onClick={() => setIsOpenCart(true)}
+                              style={{
+                                fontWeight: '400',
+                                fontFamily: 'Lato',
+                                color: '#FF9592',
+                                cursor: 'pointer'
+                              }}
+                            >
+                              
+                              {'<'} Back to cart
                         </span>
+                        </NavLink>
                         <NavLink
                         to="/payment-method"
                           className="button-main"
@@ -407,17 +410,18 @@ const ShippingInfo = () => {
                         fontWeight: '300',
                         fontFamily: 'Lato',
                         marginRight: '80px',
+                        color:'#565556'
                       }}
                     >
                       © 2020 APHRO Vietnam, Inc.  rig hts reserved.{' '}
                     </p>
-                    <p  className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>
+                    <p  className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato',color:'#565556' }}>
                       Privacy Policy
                     </p>
-                    <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>
+                    <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato',color:'#565556' }}>
                       Terms of Use
                     </p>
-                    <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>
+                    <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato',color:'#565556' }}>
                       Refund Policy
                     </p>
                   </div>

@@ -158,7 +158,7 @@ const Store = () => {
                         defaultValue={5}
                         style={{ color: '#FF9592', fontSize: '15px' }}
                       />
-                      <p style={{ fontWeight: 'bold' }}>{value.price}</p>
+                      <p style={{ fontWeight: '700', fontFamily: 'Playfair Display' }}>{value.price}</p>
                     </NavLink>
                   </Col>
                 );

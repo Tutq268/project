@@ -67,7 +67,7 @@ const Profile = () => {
       dataIndex: 'status',
       key: 'status',
       render: (item) => {
-        return <p  className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>{item}</p>;
+        return <p  className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato',color:'#565556' }}>{item}</p>;
       },
     },
   ];
@@ -171,10 +171,11 @@ const Profile = () => {
                 <div style={{ display: 'flex', flexDirection: 'row' }}>
                   <p style={{ fontWeight: '700' }}>Veri beautiful lady</p>
                   <p
+                    className="fontLato"
                     style={{
                       textDecoration: 'underline',
                       color: '#FF9592',
-                      fontWeight: 'bold',
+                      fontWeight: '300',
                       fontFamily: 'Lato',
                       marginLeft: '15px',
                     }}
@@ -193,10 +194,11 @@ const Profile = () => {
                     sample@gmail.com
                   </p>
                   <p
+                  className="fontLato"
                     style={{
                       textDecoration: 'underline',
                       color: '#FF9592',
-                      fontWeight: 'bold',
+                      fontWeight: '300',
                       fontFamily: 'Lato',
                       marginLeft: '15px',
                     }}
@@ -228,6 +230,8 @@ const Profile = () => {
                 paddingBottom: '200px',
                 display: 'flex',
                 flexDirection: 'row',
+                justifyContent:'space-between',
+                width:'700px',
                 alignItems: 'center',
               }}
             >

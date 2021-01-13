@@ -172,6 +172,7 @@ const ProductDetail = () => {
                       fontWeight: '700',
                       fontSize: '24px',
                       marginTop: '30px',
+                      fontFamily: 'Playfair Display'
                     }}
                   >
                     $9.80
@@ -214,7 +215,7 @@ const ProductDetail = () => {
                           fontFamily:'Lato'
                         }}
                       >
-                        add to card
+                        add to cart
                       </span>
                     </div>
                   </div>
@@ -576,14 +577,16 @@ const ProductDetail = () => {
                     style={{ display: 'flex', flex: 1, flexDirection: 'row' }}
                   >
                     <Input
+                    className="fontLato"
                       size="large"
                       placeholder="Name"
-                      style={{ flex: 0.6,fontFamily:'Lato',fontWeight:'bold',fontSize:'14px' }}
+                      style={{ flex: 0.6,fontFamily:'Lato',fontWeight:'300',fontSize:'14px' }}
                     />
                     <Input
+                    className="fontLato"
                       size="large"
                       placeholder="Skin Type"
-                      style={{ flex: 0.3, marginLeft: '15px',fontFamily:'Lato',fontWeight:'bold',fontSize:'14px' }}
+                      style={{ flex: 0.3, marginLeft: '15px',fontFamily:'Lato',fontWeight:'300',fontSize:'14px' }}
                     />
                   </div>
                   <div
@@ -591,9 +594,10 @@ const ProductDetail = () => {
                 }}
                   >
                     <Input
+                    className="fontLato"
                       size="large"
                       placeholder="Do I recommend this product"
-                      style={{ flex: 0.5,fontFamily:'Lato',fontWeight:'bold',fontSize:'14px' }}
+                      style={{ flex: 0.5,fontFamily:'Lato',fontWeight:'300',fontSize:'14px' }}
                     />
                     <div
                       style={{
@@ -612,17 +616,19 @@ const ProductDetail = () => {
                   </div>
                   <div style={{marginTop:'15px'}}>
                   <Input
+                        className="fontLato"
                       size="large"
                       placeholder="Title"
-                      style={{ flex: 0.4,fontFamily:'Lato',fontWeight:'bold',fontSize:'14px' }}
+                      style={{ flex: 0.4,fontFamily:'Lato',fontWeight:'300',fontSize:'14px' }}
                     />
 
                   </div>
                   <div style={{marginTop:'15px'}}>
                   <TextArea
+                      className="fontLato"
                       rows={5}
                       placeholder="Type your detail review here"
-                      style={{ flex: 0.4,fontFamily:'Lato',fontWeight:'bold',fontSize:'14px' }}
+                      style={{ flex: 0.4,fontFamily:'Lato',fontWeight:'300',fontSize:'14px' }}
                     />
 
                   </div>
