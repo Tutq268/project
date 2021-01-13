@@ -357,7 +357,10 @@ const ShippingInfo = () => {
                           placeholder="Phone number (optional)"
                         />
                       </div>
-                      <div style={{ marginTop: '50px' }}>
+                      <div style={{ marginTop: '50px', display: 'flex',
+                          flexDirection: 'row',
+                          justifyContent: 'space-between',
+                          alignItems:'center' }}>
                         <span
                           style={{
                             fontWeight: '400',
@@ -367,6 +370,25 @@ const ShippingInfo = () => {
                         >
                           {'<'} Back to cart
                         </span>
+                        <NavLink
+                        to="/payment-method"
+                          className="button-main"
+                          style={{
+                            width: '142px',
+                            height: '45px',
+                            fontFamily:'Lato'
+                          }}
+                        >
+                          <span
+                            style={{
+                              fontWeight: '700',
+                              fontSize: '14px',
+                              fontFamily:'Lato'
+                            }}
+                          >
+                            Continue
+                          </span>
+                        </NavLink>
                       </div>
                     </div>
                   </div>

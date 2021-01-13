@@ -119,6 +119,24 @@ table thead {
   background-color: #000;
 }
 
+.mainStyle .swiper-pagination-bullet-active {
+  background-color: #fff !important;
+  width: 17px;
+  height: 17px;
+}
+
+.mainStyle .swiper-pagination-bullets{
+  display: flex !important;
+  justify-content: flex-end;
+  padding-right: 98px;
+font-size: 20px;
+}
+.mainStyle .swiper-pagination-bullet{
+  width: 17px;
+  height: 17px;
+  background-color: transparent;
+  border: solid 1px #fff;
+}
 input[type=checkbox] {
   background: grey;
 }

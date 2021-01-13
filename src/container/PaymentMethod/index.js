@@ -373,7 +373,7 @@ const PaymentMethod = () => {
                               fontFamily:'Lato'
                             }}
                           >
-                            Pay now
+                            Paynơw
                           </span>
                         </NavLink>
                       </div>

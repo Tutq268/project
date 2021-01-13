@@ -12,7 +12,7 @@ const Navbar = ({ sticky }) => {
   const [isModalLogin, setIsModalLogin] = useState(false);
   const [clickSearch, setClickSearch] = useState(false);
   const [isCheckout, setIsCheckout] = useState(false);
-  const [heartIcon,setHeartIcon] = useState("./image/Home/heart-1.png")
+  const [heartIcon,setHeartIcon] = useState("./image/Home/Vector-2.png")
   const [userIcon,setUserIcon] = useState("./image/Home/Vector.png")
   const [bagIcon,setBagIcon] = useState(Vector)
   const handleOk = () => {
@@ -130,7 +130,7 @@ const Navbar = ({ sticky }) => {
               }}
               style={{ cursor: 'pointer' }}
               onMouseEnter = {() => setHeartIcon("./image/Home/blackHeart.png")}
-              onMouseLeave={() => setHeartIcon("./image/Home/heart-1.png")}
+              onMouseLeave={() => setHeartIcon("./image/Home/Vector-2.png")}
             >
               <img
                 src={heartIcon}

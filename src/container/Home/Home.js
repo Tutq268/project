@@ -1,4 +1,4 @@
-import React,{useState} from 'react';
+import React, { useState } from 'react';
 import SwiperCore, {
   Navigation,
   Pagination,
@@ -17,27 +17,29 @@ import 'swiper/components/pagination/pagination.scss';
 import 'swiper/components/scrollbar/scrollbar.scss';
 import { Col, Row, Rate } from 'antd';
 // import Footer from "./../../component/Footer/Footer"
-import Footer from './../../component/Footer/Footer'
+import Footer from './../../component/Footer/Footer';
 import { NavLink } from 'react-router-dom';
 
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const Home = () => {
-  const blackHeart = "./image/Home/blackHeart.png"
-  const roundHeart = "./image/Home/heart-1.png"
+  const blackHeart = './image/Home/blackHeart.png';
+  const roundHeart = './image/Home/heart-1.png';
   const { isSticky, element } = useSticky();
-  const [heartUrl,setHeartUrl] = useState(-1)
+  const [heartUrl, setHeartUrl] = useState(-1);
   SwiperCore.use([Autoplay]);
   return (
     <div>
       <Navbar sticky={isSticky} />
       <main style={{ backgroundColor: '#FAFAFA' }}>
         <section className="welcome">
-          <div ref={element}>
-            <Swiper autoplay={{ delay: 5000 }}>
+          <div ref={element} className="mainStyle">
+            <Swiper autoplay={{ delay: 5000 }}  pagination={{ clickable: true }}>
               {backGroundMain.map((value, index) => {
                 return (
-                  <SwiperSlide key={index}>
+                  <SwiperSlide
+                    key={index}
+                  >
                     <div
                       style={{
                         height: '570px',
@@ -69,7 +71,7 @@ const Home = () => {
                 fontWeight: 'bold',
                 fontSize: '36px',
                 marginBottom: '10px',
-                fontFamily:'Playfair Display'
+                fontFamily: 'Playfair Display',
               }}
             >
               Be Aphrodite Everyday
@@ -90,14 +92,14 @@ const Home = () => {
                 return (
                   <Col xl={6} key={index} lg={12} md={12} sm={12} xs={24}>
                     <NavLink
-                    to="/product-detail"
+                      to="/product-detail"
                       style={{
                         width: '100%',
                         display: 'flex',
                         flexDirection: 'column',
                         justifyContent: 'center',
                         alignItems: 'center',
-                        color: '#000'
+                        color: '#000',
                       }}
                     >
                       <div
@@ -111,7 +113,6 @@ const Home = () => {
                         }}
                         onMouseEnter={() => setHeartUrl(index)}
                         onMouseLeave={() => setHeartUrl(-1)}
-                        
                       >
                         <div
                           style={{
@@ -141,9 +142,10 @@ const Home = () => {
                       </div>
                       <span
                         style={{
-                          fontWeight: 'bold',
+                          fontWeight: '700',
                           fontSize: '14px',
                           marginTop: '10px',
+                          fontFamily: 'Playfair Display',
                         }}
                       >
                         {value.title}
@@ -166,25 +168,25 @@ const Home = () => {
                 alignItems: 'center',
               }}
             >
-            <NavLink to="/store"
-              className="button-main"
-              style={{
-                marginTop: '50px',
-                width: '236px',
-                height:'50px',
-              }}
-            >
-              <span
+              <NavLink
+                to="/store"
+                className="button-main"
                 style={{
-                  fontWeight: '700',
-                  fontSize: '14px',
-                  fontFamily:'Lato',
+                  marginTop: '50px',
+                  width: '236px',
+                  height: '50px',
                 }}
               >
-                   VIEW ALL PRODUCT
-              </span>
-            </NavLink>
-
+                <span
+                  style={{
+                    fontWeight: '700',
+                    fontSize: '14px',
+                    fontFamily: 'Lato',
+                  }}
+                >
+                  VIEW ALL PRODUCT
+                </span>
+              </NavLink>
             </div>
           </div>
           <div>
@@ -212,7 +214,7 @@ const Home = () => {
                         fontSize: '120px',
                         fontWeight: '700',
                         color: '#F59393',
-                        fontFamily:'Playfair Display'
+                        fontFamily: 'Playfair Display',
                       }}
                     >
                       Classic Beauty
@@ -244,7 +246,8 @@ const Home = () => {
                       Our skincare essentials are clean, cruelty-free and free
                       of parabens, sulfates, and phthalates, among others.
                     </p>
-                    <NavLink to="/about"
+                    <NavLink
+                      to="/about"
                       style={{
                         marginTop: '27px',
                         textDecoration: 'underline',
@@ -272,7 +275,7 @@ const Home = () => {
                 fontWeight: 'bold',
                 fontSize: '36px',
                 marginBottom: '10px',
-                fontFamily:'Playfair Display'
+                fontFamily: 'Playfair Display',
               }}
             >
               Discover the Aphro’s Kits
@@ -316,8 +319,9 @@ const Home = () => {
                 alignItems: 'center',
               }}
             >
-              <NavLink to="/kits"
-               className="button-main"
+              <NavLink
+                to="/kits"
+                className="button-main"
                 style={{
                   marginTop: '50px',
                   width: '236px',
@@ -328,7 +332,7 @@ const Home = () => {
                   style={{
                     fontWeight: '700',
                     fontSize: '14px',
-                    fontFamily:'Lato'
+                    fontFamily: 'Lato',
                   }}
                 >
                   VIEW DETAILS
@@ -360,7 +364,8 @@ const Home = () => {
                 fontFamily: 'Lato',
               }}
             >
-              Join the APHRO’s Community to share your Reviews and Experience
+              ship Join the APHRO’s Community to share your Reviews and
+              Experience
             </span>
             <span
               style={{
@@ -371,8 +376,9 @@ const Home = () => {
             >
               and update latest news about our Products
             </span>
-            <NavLink to="/login"
-             className="button-main"
+            <NavLink
+              to="/login"
+              className="button-main"
               style={{
                 marginTop: '50px',
                 width: '236px',
@@ -383,7 +389,7 @@ const Home = () => {
                 style={{
                   fontWeight: '700',
                   fontSize: '14px',
-                  fontFamily:'Lato'
+                  fontFamily: 'Lato',
                 }}
               >
                 SIGN IN

@@ -47,8 +47,8 @@ const Kits = () => {
       <Navbar sticky={isSticky} />
       <main style={{ backgroundColor: '#FAFAFA' }}>
         <section className="welcome">
-          <div ref={element}>
-            <Swiper autoplay={{ delay: 5000 }}>
+        <div ref={element} className="mainStyle">
+            <Swiper autoplay={{ delay: 5000 }}  pagination={{ clickable: true }}>
               {backGroundKits.map((value, index) => {
                 return (
                   <SwiperSlide key={index}>
@@ -174,9 +174,10 @@ const Kits = () => {
                         ></div>
                         <span
                           style={{
-                            fontWeight: 'bold',
+                            fontWeight: '700',
                             fontSize: '14px',
                             marginTop: '10px',
+                            fontFamily:'Playfair Display'
                           }}
                         >
                           {value.title}
@@ -315,9 +316,10 @@ const Kits = () => {
                         ></div>
                         <span
                           style={{
-                            fontWeight: 'bold',
+                            fontWeight: '700',
                             fontSize: '14px',
                             marginTop: '10px',
+                            fontFamily:'Playfair Display'
                           }}
                         >
                           {value.title}

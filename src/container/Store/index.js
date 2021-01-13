@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import SwiperCore, {
   Navigation,
   Pagination,
@@ -23,6 +23,10 @@ import {NavLink} from 'react-router-dom'
 SwiperCore.use([Navigation, Pagination, Scrollbar, A11y]);
 
 const Store = () => {
+  const blackHeart = './image/Home/blackHeart.png';
+  const roundHeart = './image/Home/heart-1.png';
+  const [heartUrl, setHeartUrl] = useState(-1);
+
   const { isSticky, element } = useSticky();
   SwiperCore.use([Autoplay]);
 
@@ -42,8 +46,8 @@ const Store = () => {
       <Navbar sticky={isSticky} />
       <main style={{ backgroundColor: '#FAFAFA' }}>
         <section className="welcome">
-          <div ref={element}>
-            <Swiper autoplay={{ delay: 5000 }}>
+        <div ref={element} className="mainStyle">
+            <Swiper autoplay={{ delay: 5000 }}  pagination={{ clickable: true }}>
               {backGroundStore.map((value, index) => {
                 return (
                   <SwiperSlide key={index}>
@@ -121,6 +125,8 @@ const Store = () => {
                           backgroundPosition: 'center',
                           backgroundSize: 'cover',
                         }}
+                        onMouseEnter={() => setHeartUrl(index)}
+                        onMouseLeave={() => setHeartUrl(-1)}
                       >
                         <div
                           style={{
@@ -132,16 +138,17 @@ const Store = () => {
                         >
                           <img
                             alt="Vector"
-                            src="./image/Home/blackHeart.png"
+                            src={heartUrl === index ? blackHeart : roundHeart}
                             style={{ width: '23px', height: '21px' }}
                           />
                         </div>
                       </div>
                       <span
                         style={{
-                          fontWeight: 'bold',
+                          fontWeight: '700',
                           fontSize: '14px',
                           marginTop: '10px',
+                          fontFamily:'Playfair Display'
                         }}
                       >
                         {value.title}
