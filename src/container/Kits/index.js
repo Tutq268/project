@@ -164,6 +164,7 @@ const Kits = () => {
                         }}
                       >
                         <div
+                        className="productStyle"
                           style={{
                             width: '294px',
                             height: '382px',
@@ -309,6 +310,7 @@ const Kits = () => {
                         }}
                       >
                         <div
+                        className="productStyle"
                           style={{
                             width: '294px',
                             height: '382px',

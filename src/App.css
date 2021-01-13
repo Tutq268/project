@@ -144,3 +144,9 @@ input[type=checkbox] {
 .fontLato{
   -webkit-text-stroke: 0.5px
 }
+.productStyle:hover{
+ 
+  box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: -5px 5px 10px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow:-5px 5px 10px rgba(0, 0, 0, 0.25);
+}

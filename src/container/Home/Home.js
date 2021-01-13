@@ -108,6 +108,7 @@ const Home = () => {
                       }}
                     >
                       <div
+                      className="productStyle"
                         style={{
                           width: '294px',
                           height: '382px',
