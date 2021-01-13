@@ -203,7 +203,7 @@ const ShippingInfo = () => {
                       <p style={{ fontFamily: 'Lato', fontWeight: '400' }}>
                         Contact Information
                       </p>
-                      <p style={{ fontFamily: 'Lato', fontWeight: '300' }}>
+                      <p className="fontLato" style={{ fontFamily: 'Lato', fontWeight: '300' }}>
                         Already have an account?{' '}
                         <span style={{ color: '#FF9592' }}>Log in</span>
                       </p>
@@ -402,21 +402,22 @@ const ShippingInfo = () => {
                     }}
                   >
                     <p
+                    className="fontLato"
                       style={{
                         fontWeight: '300',
                         fontFamily: 'Lato',
                         marginRight: '80px',
                       }}
                     >
-                      © 2020 APHRO Vietnam, Inc. All rig hts reserved.{' '}
+                      © 2020 APHRO Vietnam, Inc.  rig hts reserved.{' '}
                     </p>
-                    <p style={{ fontWeight: '300', fontFamily: 'Lato' }}>
+                    <p  className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>
                       Privacy Policy
                     </p>
-                    <p style={{ fontWeight: '300', fontFamily: 'Lato' }}>
+                    <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>
                       Terms of Use
                     </p>
-                    <p style={{ fontWeight: '300', fontFamily: 'Lato' }}>
+                    <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>
                       Refund Policy
                     </p>
                   </div>
@@ -497,6 +498,7 @@ const ShippingInfo = () => {
                               {value.title}
                             </p>
                             <p
+                            className="fontLato"
                               style={{
                                 fontFamily: 'Lato',
                                 fontWeight: '300',
@@ -565,7 +567,7 @@ const ShippingInfo = () => {
                   </div>
                   <div style={{display: 'flex',flexDirection:'row',justifyContent:'space-between',alignItems:'center',marginTop:'20px'}}>
                     <p style={{fontWeight:'400',fontFamily:'Lato'}}>Shipping</p>
-                    <p style={{fontWeight:'300',fontFamily:'Lato'}}>calculate at next step</p>
+                    <p className="fontLato" style={{fontWeight:'300',fontFamily:'Lato'}}>calculate at next step</p>
                   </div>
                   
                 </div>

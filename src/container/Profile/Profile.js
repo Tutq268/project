@@ -45,7 +45,7 @@ const Profile = () => {
       render: (item) => {
         return (
           <div style={{ padding: '0 20px' }}>
-            <p style={{ fontWeight: '300', fontFamily: 'Lato' }}>{item}</p>
+            <p  className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>{item}</p>
           </div>
         );
       },
@@ -67,7 +67,7 @@ const Profile = () => {
       dataIndex: 'status',
       key: 'status',
       render: (item) => {
-        return <p style={{ fontWeight: '300', fontFamily: 'Lato' }}>{item}</p>;
+        return <p  className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>{item}</p>;
       },
     },
   ];
@@ -79,7 +79,7 @@ const Profile = () => {
       render: (item) => {
         return (
           <div style={{ padding: '0 20px' }}>
-            <p style={{ fontWeight: '300', fontFamily: 'Lato' }}>{item}</p>
+            <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>{item}</p>
           </div>
         );
       },
@@ -101,6 +101,7 @@ const Profile = () => {
       render: (item) => {
         return (
           <p
+          className="fontLato"
             style={{
               fontWeight: '300',
               fontFamily: 'Lato',

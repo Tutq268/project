@@ -365,6 +365,7 @@ const ProductDetail = () => {
                 Review from the Aphro’s Community
               </span>
               <span
+               className="fontLato"
                 style={{
                   fontWeight: '300',
                   fontSize: '18px',

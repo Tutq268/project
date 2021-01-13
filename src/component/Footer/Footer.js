@@ -70,7 +70,8 @@ const Footer = () => {
               </NavLink>
             </div>
             <p
-              style={{ fontWeight: '300', fontSize: '14px', color: '#FAFAFA' }}
+            className="fontLato"
+              style={{ fontWeight: '300', fontSize: '14px', color: '#FAFAFA'}}
             >
               #belikeAphrodite @since2020
             </p>
@@ -91,9 +92,10 @@ const Footer = () => {
               About the company
             </p>
             <p
+              className="fontLato"
               style={{
                 color: '#FAFAFA',
-                fontWeight: '400',
+                fontWeight: '300',
                 fontSize: '14px',
                 marginTop: '19px',
                 fontFamily: 'Lato',

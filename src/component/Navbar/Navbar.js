@@ -223,6 +223,7 @@ const Navbar = ({ sticky }) => {
                       {value.title}
                     </p>
                     <p
+                     className="fontLato"
                       style={{
                         fontFamily: 'Lato',
                         fontWeight: '300',
@@ -232,6 +233,7 @@ const Navbar = ({ sticky }) => {
                       50ml
                     </p>
                     <p
+                     className="fontLato"
                       style={{
                         fontFamily: 'Lato',
                         fontWeight: '300',
@@ -286,6 +288,7 @@ const Navbar = ({ sticky }) => {
               <p style={{ fontWeight: '600', fontFamily: 'Lato' }}>$ 102</p>
             </div>
             <p
+             className="fontLato"
               style={{
                 fontWeight: '300',
                 fontFamily: 'Lato',
@@ -377,6 +380,7 @@ const Navbar = ({ sticky }) => {
                       {value.title}
                     </p>
                     <p
+                     className="fontLato"
                       style={{
                         fontFamily: 'Lato',
                         fontWeight: '300',
@@ -386,6 +390,7 @@ const Navbar = ({ sticky }) => {
                       50ml
                     </p>
                     <p
+                     className="fontLato"
                       style={{
                         fontFamily: 'Lato',
                         fontWeight: '300',
@@ -446,6 +451,7 @@ const Navbar = ({ sticky }) => {
             }}
           >
             <p
+             className="fontLato"
               style={{
                 fontWeight: '300',
                 fontFamily: 'Lato',
@@ -603,6 +609,7 @@ const Navbar = ({ sticky }) => {
               You have to log in to see this page.
             </p>
             <p
+             className="fontLato"
               style={{
                 fontSize: '14px',
                 fontFamily: 'Lato',

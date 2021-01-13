@@ -24,7 +24,7 @@ const PaymentMethod = () => {
       render: (item) => {
         return (
           <div>
-            <p style={{ fontWeight: '300', fontFamily: 'Lato' }}>{item}</p>
+            <p  className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>{item}</p>
           </div>
         );
       },
@@ -46,6 +46,7 @@ const PaymentMethod = () => {
       render: (item) => {
         return (
           <p
+          className="fontLato"
             style={{
               fontWeight: '300',
               fontFamily: 'Lato',
@@ -148,8 +149,8 @@ const PaymentMethod = () => {
                       >
                         Shipping address
                       </span>
-                      <span style={{ fontFamily: 'Lato', fontWeight: '300' }}>
-                        Keep me up to date on news and exclusive offers
+                      <span  className="fontLato" style={{ fontFamily: 'Lato', fontWeight: '300' }}>
+                        keepor me up to date on news and exclusive offers
                       </span>
                       <div
                         style={{
@@ -389,7 +390,9 @@ const PaymentMethod = () => {
                     }}
                   >
                     <p
+                     className="fontLato"
                       style={{
+                        
                         fontWeight: '300',
                         fontFamily: 'Lato',
                         marginRight: '80px',
@@ -397,13 +400,13 @@ const PaymentMethod = () => {
                     >
                       © 2020 APHRO Vietnam, Inc. All rig hts reserved.{' '}
                     </p>
-                    <p style={{ fontWeight: '300', fontFamily: 'Lato' }}>
+                    <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>
                       Privacy Policy
                     </p>
-                    <p style={{ fontWeight: '300', fontFamily: 'Lato' }}>
+                    <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>
                       Terms of Use
                     </p>
-                    <p style={{ fontWeight: '300', fontFamily: 'Lato' }}>
+                    <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>
                       Refund Policy
                     </p>
                   </div>
@@ -484,6 +487,7 @@ const PaymentMethod = () => {
                               {value.title}
                             </p>
                             <p
+                             className="fontLato"
                               style={{
                                 fontFamily: 'Lato',
                                 fontWeight: '300',
@@ -581,7 +585,7 @@ const PaymentMethod = () => {
                     <p style={{ fontWeight: '400', fontFamily: 'Lato' }}>
                       Shipping
                     </p>
-                    <p style={{ fontWeight: '300', fontFamily: 'Lato' }}>
+                    <p className="fontLato" style={{ fontWeight: '300', fontFamily: 'Lato' }}>
                       calculate at next step
                     </p>
                   </div>

@@ -1,5 +1,6 @@
 *{
   font-family: 'Lato', serif;
+  /* -webkit-text-stroke: 0.5px */
 }
 .navbar-nav li{
   font-weight: 700;
@@ -139,4 +140,7 @@ font-size: 20px;
 }
 input[type=checkbox] {
   background: grey;
+}
+.fontLato{
+  -webkit-text-stroke: 0.5px
 }

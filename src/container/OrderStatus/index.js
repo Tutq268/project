@@ -62,6 +62,7 @@ const OrderStatus = () => {
           render: (item) => {
             return (
               <p
+              className="fontLato"
                 style={{
                   fontWeight: '300',
                   fontFamily: 'Lato',
@@ -122,6 +123,7 @@ const OrderStatus = () => {
                   Hi Veri Beautiful Lady, your order is confirmed.
                 </p>
                 <p
+                 className="fontLato"
                   style={{
                     fontFamily: 'Lato',
                     fontWeight: '300',
@@ -226,6 +228,7 @@ const OrderStatus = () => {
                             {value.title}
                           </p>
                           <p
+                           className="fontLato"
                             style={{
                               fontFamily: 'Lato',
                               fontWeight: '300',

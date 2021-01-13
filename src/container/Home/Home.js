@@ -77,6 +77,7 @@ const Home = () => {
               Be Aphrodite Everyday
             </span>
             <span
+             className="fontLato"
               style={{
                 fontWeight: '300',
                 fontSize: '18px',
@@ -281,6 +282,7 @@ const Home = () => {
               Discover the Aphro’s Kits
             </span>
             <span
+             className="fontLato"
               style={{
                 fontWeight: '300',
                 fontSize: '18px',
@@ -358,6 +360,7 @@ const Home = () => {
               #BEAPHRO
             </span>
             <span
+             className="fontLato"
               style={{
                 fontSize: '18px',
                 fontWeight: '300',
@@ -368,6 +371,7 @@ const Home = () => {
               Experience
             </span>
             <span
+             className="fontLato"
               style={{
                 fontSize: '18px',
                 fontWeight: '300',

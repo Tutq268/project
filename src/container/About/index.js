@@ -255,6 +255,7 @@ const About = () => {
                     #BEAPHRO
                   </p>
                   <p
+                   className="fontLato"
                     style={{
                       fontFamily: 'Lato',
                       fontWeight: '300',

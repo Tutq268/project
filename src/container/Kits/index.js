@@ -132,6 +132,7 @@ const Kits = () => {
                 The Pearly Goddess
               </span>
               <span
+               className="fontLato"
                 style={{
                   width: '674px',
                   wordWrap: 'break-word',
@@ -274,6 +275,7 @@ const Kits = () => {
                 The Beauty Spell
               </span>
               <span
+               className="fontLato"
                 style={{
                   width: '674px',
                   wordWrap: 'break-word',
