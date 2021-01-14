@@ -6,7 +6,7 @@ import Navbar from './../../component/Navbar/Navbar';
 import { Button } from 'antd';
 // import Footer from "./../../component/Footer/Footer"
 import Footer from './../../component/Footer/Footer'
-
+import {NavLink} from 'react-router-dom'
 const Policy = () =>{
     const { isSticky, element } = useSticky();
     return(
