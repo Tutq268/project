@@ -39,9 +39,9 @@ const Policy = () =>{
                             <p style={{fontWeight:'400',fontFamily:'Lato'}}>Any Kits are final sale and ineligible for return.</p>
                             <p style={{fontWeight:'400',fontFamily:'Lato'}}>We do not accept returns or exchanges on international orders and shipments.</p>
                             <div style={{marginTop:'52px'}}>
-                    <a href="/" style={{width: '100%',height:'50px',fontFamily:'Lato'}}  className="button-main">
+                    <NavLink to="/" style={{width: '100%',height:'50px',fontFamily:'Lato'}}  className="button-main">
                     I understand & want to continue
-                    </a>
+                    </NavLink>
                     </div>
                     </div>
                 </div>

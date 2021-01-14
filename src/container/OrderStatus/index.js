@@ -326,9 +326,9 @@ const OrderStatus = () => {
                     
                   }}
                 >
-                    Need help? <a href="/contact" style={{color: '#FF9592',textDecoration:'underline'}}>Contact us</a>
+                    Need help? <NavLink to="/contact" style={{color: '#FF9592',textDecoration:'underline'}}>Contact us</NavLink>
                 </span>
-                <a href="/"
+                <NavLink to="/"
                   className="button-main"
                   style={{
                     width: '300px',
@@ -344,7 +344,7 @@ const OrderStatus = () => {
                   >
                    Continue shopping
                   </span>
-                </a>
+                </NavLink>
               </div>
             </div>
           </div>

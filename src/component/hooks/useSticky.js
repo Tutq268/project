@@ -28,8 +28,12 @@ function useSticky () {
       };
     };
   
+    useEffect(() =>{
+      window.scrollTo(0, 0)
+    },[])
 
 useEffect(() => {
+
   window.addEventListener("scroll", debounce(handleScroll))
   if(handleScroll)  window.removeEventListener("scroll", () => handleScroll);
   return () => {

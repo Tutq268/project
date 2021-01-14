@@ -267,7 +267,7 @@ const About = () => {
                   >
                     For all enquiries, please contact us through contact page{' '}
                   </p>
-                  <a href="/contact"
+                  <NavLink to="/contact"
                     className="button-main"
                     style={{
                       marginTop: '50px',
@@ -283,7 +283,7 @@ const About = () => {
                     >
                       Contact us
                     </span>
-                  </a>
+                  </NavLink>
                 </div>
               </div>
             </div>

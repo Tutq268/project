@@ -648,7 +648,7 @@ const Navbar = ({ sticky,openCard,isCloseCard }) => {
             </p>
           </div>
 
-          <a href="/login" style={{ marginTop: '90px', width: '100%' }}>
+          <NavLink to="/login" style={{ marginTop: '90px', width: '100%' }}>
             <Button
               style={{
                 width: '100%',
@@ -661,7 +661,7 @@ const Navbar = ({ sticky,openCard,isCloseCard }) => {
             >
               Login
             </Button>
-          </a>
+          </NavLink>
         </div>
       </Modal>
     </div>

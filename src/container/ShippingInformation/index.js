@@ -140,7 +140,7 @@ const ShippingInfo = () => {
                       marginBottom: '15px',
                     }}
                   >
-                    <a href="/login" className="button-shipping">
+                    <NavLink to="/login" className="button-shipping">
                       <span
                         style={{
                           fontWeight: '700',
@@ -159,8 +159,8 @@ const ShippingInfo = () => {
                       >
                         for reward points
                       </span>
-                    </a>
-                    <a href="/payment-method" className="button-shipping">
+                    </NavLink>
+                    <NavLink to="/payment-method" className="button-shipping">
                       {/* <a href="/payment-method"> */}
 
                       
@@ -182,7 +182,7 @@ const ShippingInfo = () => {
                       >
                         fill out below
                       </span>
-                      </a>
+                      </NavLink>
                     {/* </div> */}
                   </div>
 
@@ -207,7 +207,7 @@ const ShippingInfo = () => {
                       </p>
                       <p className="fontLato" style={{ fontFamily: 'Lato', fontWeight: '300' }}>
                         Already have an account?{' '}
-                        <a href="/login" style={{ color: '#FF9592' }}>Log in</a>
+                        <NavLink to="/login" style={{ color: '#FF9592' }}>Log in</NavLink>
                       </p>
                     </div>
                     <Input
