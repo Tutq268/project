@@ -1,3 +1,4 @@
+import kit5 from './../../asset/image/kit5.png'
 export const backGroundKits = [
     {
         id: 0,
@@ -40,7 +41,7 @@ export const coreSeries=[
     },
     {
         id: 3,
-        image: './image/Home/Treatment.png',
+        image: './image/Store/ProductStore6.png',
         title: 'Pearly Goddess Gentle Make-up Remover',
         price: '$ 34'
     }
@@ -48,25 +49,25 @@ export const coreSeries=[
 export const supplement = [
     {
         id: 4,
-        image: './image/Store/ProductStore5.png',
+        image: kit5,
         title: 'Pearly Goddess Foaming Cleanser',
         price: '$ 34'
     },
     {
         id: 5,
-        image: './image/Store/ProductStore6.png',
+        image: './image/Home/Treatment.png',
         title: 'Pearly Goddess Gentle Make-up Remover',
         price: '$ 34'
     },
     {
         id: 6,
-        image: './image/Store/ProductStore7.png',
+        image: './image/Store/ProductStore5.png',
         title: 'Glowing Spell Hyaluronic Toner',
         price: '$ 34'
     },
     {
         id: 7,
-        image: './image/Store/ProductStore8.png',
+        image: './image/Store/ProductStore7.png',
         title: 'Clarifying Spell 2% BHA Acne Treatment',
         price: '$ 34'
     },

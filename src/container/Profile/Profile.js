@@ -227,7 +227,7 @@ const Profile = () => {
             <div
               style={{
                 marginTop: '40px',
-                paddingBottom: '200px',
+                paddingBottom: '40px',
                 display: 'flex',
                 flexDirection: 'row',
                 justifyContent:'space-between',
@@ -235,22 +235,27 @@ const Profile = () => {
                 alignItems: 'center',
               }}
             >
-              <p>
-                Need help?{' '}
-                <NavLink to="/contact"
+               <NavLink to="/login"
+               onClick={() => localStorage.removeItem("tokenWeb")}
+                className="button-main"
+                style={{
+                  width: '277px',
+                  height: '50px',
+                }}
+              >
+                <span
                   style={{
-                    textDecoration: 'underline',
-                    color: '#FF9592',
-                    marginRight: '15em',
+                    fontWeight: '700',
+                    fontSize: '14px',
                   }}
                 >
-                  Contact us
-                </NavLink>
-              </p>
+                  Log out
+                </span>
+              </NavLink>
               <NavLink to="/"
                 className="button-main"
                 style={{
-                  width: '236px',
+                  width: '277px',
                   height: '50px',
                 }}
               >
@@ -264,7 +269,31 @@ const Profile = () => {
                 </span>
               </NavLink>
             </div>
+            <div
+              style={{
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent:'flex-start',
+                width:'700px',
+                alignItems: 'center',
+                paddingBottom:'143px'
+              }}
+            >
+               <p>
+                Need help?{' '}
+                <NavLink to="/contact"
+                  style={{
+                    textDecoration: 'underline',
+                    color: '#FF9592',
+                    marginRight: '15em',
+                  }}
+                >
+                  Contact us
+                </NavLink>
+              </p>
+            </div>
           </div>
+         
         </section>
       </main>
       <Footer />
